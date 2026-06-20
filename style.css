@@ -3,7 +3,8 @@
     --cream-bg: #FAF6F0;        /* Matte Warm Cream Background */
     --chocolate-text: #2B1B12;  /* Rich Chocolate Deep Brown */
     --accent-gold: #C5A059;     /* Elegant Soft Gold */
-    --pure-white: #FFFFFF;      /* Perfect White to Blend Logo Background */
+    --logo-box-bg: #675E54;     /* Perfect match for your logo asset background */
+    --pure-white: #FFFFFF;      
     --card-shadow: 0 8px 24px rgba(43, 27, 18, 0.04);
 }
 
@@ -28,8 +29,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 8%;
-    background-color: var(--pure-white); /* Seamlessly blends the white logo box */
+    padding: 0px 8% 0px 0px; /* Removes padding around logo to blend perfectly */
+    background-color: var(--logo-box-bg); /* Seamlessly extends your logo background across the nav bar */
     border-bottom: 1px solid rgba(43, 27, 12, 0.06);
 }
 .logo-container {
@@ -38,7 +39,7 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: var(--chocolate-text);
+    color: var(--pure-white); /* Changes menu items to white for crisp legibility against the new header background */
     margin-left: 35px;
     font-size: 0.85rem;
     font-weight: 500;
@@ -53,14 +54,14 @@ body {
 /* --- SECTION 2: HERO WELCOME CONTAINER --- */
 .hero-box {
     min-height: 70vh;
-    background-color: var(--cream-bg); /* Aligns the overall background tone */
+    background-color: var(--cream-bg); 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
 }
 .hero-overlay-card {
-    background-color: var(--cream-bg); /* Removes the heavy stark white box block */
+    background-color: var(--cream-bg); 
     padding: 40px 20px;
     max-width: 850px;
     text-align: center;
