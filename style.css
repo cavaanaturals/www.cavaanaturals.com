@@ -3,7 +3,7 @@
     --cream-bg: #FAF6F0;        /* Matte Warm Cream Background */
     --chocolate-text: #2B1B12;  /* Rich Chocolate Deep Brown */
     --accent-gold: #C5A059;     /* Elegant Soft Gold */
-    --pure-white: #FFFFFF;      
+    --pure-white: #FFFFFF;      /* Clean White Header Background */
     --card-shadow: 0 8px 24px rgba(43, 27, 18, 0.04);
 }
 
@@ -28,8 +28,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 8%;
-    background-color: var(--cream-bg); /* Warm clean cream header background */
+    padding: 15px 8%;
+    background-color: var(--pure-white) !important; /* Forces a clean white header background */
     border-bottom: 1px solid rgba(43, 27, 12, 0.06);
 }
 .logo-container {
@@ -38,7 +38,7 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: var(--chocolate-text); /* Crisp chocolate brown text for navigation links */
+    color: var(--chocolate-text) !important; /* Forces rich brown text color for visibility */
     margin-left: 35px;
     font-size: 0.85rem;
     font-weight: 500;
@@ -47,7 +47,7 @@ body {
     transition: color 0.3s ease;
 }
 .nav-links a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-gold) !important;
 }
 
 /* --- SECTION 2: HERO WELCOME CONTAINER --- */
@@ -310,6 +310,11 @@ body {
 .social-links-box a:hover {
     color: var(--accent-gold);
     border-bottom-color: var(--accent-gold);
+}
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(250, 246, 240, 0.08);
+    margin: 50px 0 30px 0;
 }
 .footer-bottom-bar {
     display: flex;
