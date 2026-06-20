@@ -3,7 +3,7 @@
     --cream-bg: #FAF6F0;        /* Matte Warm Cream Background */
     --chocolate-text: #2B1B12;  /* Rich Chocolate Deep Brown */
     --accent-gold: #C5A059;     /* Elegant Soft Gold */
-    --pure-white: #FFFFFF;      /* Clean White Container Background */
+    --pure-white: #FFFFFF;      /* Perfect White to Blend Logo Background */
     --card-shadow: 0 8px 24px rgba(43, 27, 18, 0.04);
 }
 
@@ -28,27 +28,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    background-color: var(--cream-bg);
+    padding: 10px 8%;
+    background-color: var(--pure-white); /* Seamlessly blends the white logo box */
     border-bottom: 1px solid rgba(43, 27, 12, 0.06);
 }
 .logo-container {
     display: flex;
-    flex-direction: column;
-}
-.brand-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 1;
-}
-.brand-subtext {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--accent-gold);
-    margin-top: 2px;
+    align-items: center;
 }
 .nav-links a {
     text-decoration: none;
@@ -66,24 +52,22 @@ body {
 
 /* --- SECTION 2: HERO WELCOME CONTAINER --- */
 .hero-box {
-    min-height: 75vh;
-    background-color: #EDE6DC; /* Warm matte structural placeholder block */
+    min-height: 70vh;
+    background-color: var(--cream-bg); /* Aligns the overall background tone */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
 }
 .hero-overlay-card {
-    background-color: var(--pure-white);
-    padding: 60px 50px;
-    max-width: 700px;
+    background-color: var(--cream-bg); /* Removes the heavy stark white box block */
+    padding: 40px 20px;
+    max-width: 850px;
     text-align: center;
-    box-shadow: var(--card-shadow);
-    border: 1px solid rgba(43, 27, 12, 0.04);
 }
 .hero-overlay-card h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -95,7 +79,7 @@ body {
     margin: 0 auto 25px auto;
 }
 .hero-overlay-card p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 35px;
     opacity: 0.9;
@@ -222,7 +206,6 @@ body {
     color: rgba(0,0,0,0.4);
     text-transform: uppercase;
 }
-/* Structural variations for placeholders until images land */
 .sprinkles-bg { background-color: #F5EBE6; }
 .chocolate-bg { background-color: #E6E1DE; }
 .butterscotch-bg { background-color: #F5EFE6; }
