@@ -1,231 +1,350 @@
-/* --- Premium Minimal Theme for Cavaa Naturals --- */
-
+/* --- CAVAA NATURALS BRAND DESIGN PALETTE --- */
 :root {
-    --bg-color: #FAF8F5;       /* Soft matte off-white/cream */
-    --text-primary: #2C1A11;   /* Rich, deep chocolate brown */
-    --accent-gold: #D4AF37;    /* Subtle elegant gold */
-    --white: #FFFFFF;
+    --cream-bg: #FAF6F0;        /* Matte Warm Cream Background */
+    --chocolate-text: #2B1B12;  /* Rich Chocolate Deep Brown */
+    --accent-gold: #C5A059;     /* Elegant Soft Gold */
+    --pure-white: #FFFFFF;      /* Clean White Container Background */
+    --card-shadow: 0 8px 24px rgba(43, 27, 18, 0.04);
 }
 
+/* --- BASE STYLES --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    line-height: 1.6;
+    background-color: var(--cream-bg);
+    color: var(--chocolate-text);
+    line-height: 1.7;
 }
 
-/* Header/Nav */
+/* --- SECTION 1: HEADER NAVIGATION --- */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-color: transparent;
+    padding: 25px 8%;
+    background-color: var(--cream-bg);
+    border-bottom: 1px solid rgba(43, 27, 12, 0.06);
 }
-
-.main-header .logo {
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+.brand-logo {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-size: 2.2rem;
     font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1;
 }
-
+.brand-subtext {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent-gold);
+    margin-top: 2px;
+}
 .nav-links a {
     text-decoration: none;
-    color: var(--text-primary);
-    margin-left: 30px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    color: var(--chocolate-text);
+    margin-left: 35px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
     color: var(--accent-gold);
 }
 
-/* Hero Section */
-.hero-section {
-    height: 70vh;
+/* --- SECTION 2: HERO WELCOME CONTAINER --- */
+.hero-box {
+    min-height: 75vh;
+    background-color: #EDE6DC; /* Warm matte structural placeholder block */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px;
+}
+.hero-overlay-card {
+    background-color: var(--pure-white);
+    padding: 60px 50px;
+    max-width: 700px;
     text-align: center;
-    padding: 0 20px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(43, 27, 12, 0.04);
 }
-
-.hero-content h1 {
+.hero-overlay-card h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
     font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
-
-.hero-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 40px auto;
+.decorative-line {
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-gold);
+    margin: 0 auto 25px auto;
+}
+.hero-overlay-card p {
+    font-size: 1.05rem;
     font-weight: 300;
+    margin-bottom: 35px;
+    opacity: 0.9;
 }
-
-.cta-button {
+.hero-cta {
     display: inline-block;
-    padding: 12px 35px;
-    border: 1px solid var(--text-primary);
-    color: var(--text-primary);
+    padding: 14px 38px;
+    border: 1px solid var(--chocolate-text);
+    color: var(--chocolate-text);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 2px;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
-
-.cta-button:hover {
-    background-color: var(--text-primary);
-    color: var(--bg-color);
+.hero-cta:hover {
+    background-color: var(--chocolate-text);
+    color: var(--cream-bg);
 }
 
-/* Products Gallery */
-.collection-section {
-    padding: 100px 10%;
-    text-align: center;
+/* --- SECTION 3: STORY & PHILOSOPHY BOX --- */
+.story-box-section {
+    padding: 100px 8%;
 }
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: 400;
+.story-container {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-.section-subtitle {
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: 60px;
-    opacity: 0.8;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.product-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    text-align: center;
-}
-
-.product-image-container {
-    height: 280px;
+.story-image-placeholder {
+    flex: 1;
+    background-color: #E6DFD5;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    background-color: #FDFDFD;
+    border: 1px dashed rgba(43, 27, 12, 0.15);
 }
-
-.product-jar {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+.placeholder-text-inside {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    text-transform: uppercase;
 }
-
-.product-card h3 {
+.story-text-card {
+    flex: 1;
+    background-color: var(--pure-white);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--card-shadow);
+}
+.section-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-gold);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.story-text-card h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.story-text-card p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* --- SECTION 4: PRODUCT GALLERY CONTAINER --- */
+.products-section {
+    padding: 100px 8%;
+    background-color: var(--pure-white);
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.section-header p {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+.products-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gourmet-product-card {
+    background-color: var(--cream-bg);
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+    border: 1px solid rgba(43, 27, 12, 0.03);
+    transition: transform 0.3s ease;
+}
+.gourmet-product-card:hover {
+    transform: translateY(-5px);
+}
+.jar-visual-box {
+    height: 260px;
+    background-color: #EFEFEF;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+    text-transform: uppercase;
+}
+/* Structural variations for placeholders until images land */
+.sprinkles-bg { background-color: #F5EBE6; }
+.chocolate-bg { background-color: #E6E1DE; }
+.butterscotch-bg { background-color: #F5EFE6; }
+.cocoa-bg { background-color: #EAE5E1; }
+.drinking-bg { background-color: #E2DDD9; }
+
+.gourmet-product-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
     margin-bottom: 5px;
 }
-
-.weight {
+.product-weight {
+    display: block;
     font-size: 0.85rem;
     color: var(--accent-gold);
+    font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-.desc {
+.gourmet-product-card p {
     font-size: 0.9rem;
     font-weight: 300;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
-/* Inspiration & Videos */
-.inspiration-section {
-    padding: 80px 10%;
-    background-color: var(--white);
-    text-align: center;
+/* --- SECTION 5: VIDEO INSPIRATION CONTAINER --- */
+.video-section-box {
+    padding: 100px 8%;
 }
-
-.video-container {
-    max-width: 800px;
+.video-showcase-container {
+    max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background-color: var(--pure-white);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
 }
-
-/* Story Section */
-.story-section {
-    padding: 100px 10%;
-}
-
-.story-layout {
+.video-box-placeholder {
+    background-color: #2B1B12;
+    height: 480px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    justify-content: center;
+}
+.video-play-mock {
+    color: var(--cream-bg);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
-.story-text {
-    flex: 1;
+/* --- SECTION 6: FOOTER & CONNECTIVITY BOX --- */
+.premium-footer-box {
+    background-color: var(--chocolate-text);
+    color: var(--cream-bg);
+    padding: 80px 8% 40px 8%;
 }
-
-.story-text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
-    margin-bottom: 20px;
-}
-
-.story-text p {
-    margin-bottom: 20px;
-    font-weight: 300;
-}
-
-/* Footer */
-.main-footer {
-    background-color: var(--text-primary);
-    color: var(--bg-color);
-    padding: 60px 10% 30px 10%;
-    text-align: center;
-}
-
-.main-footer h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.insta-link {
-    color: var(--bg-color);
-    font-weight: 500;
-}
-
-.footer-divider {
-    border: 0;
-    border-top: 1px solid rgba(250, 248, 245, 0.1);
-    margin: 40px 0 20px 0;
-}
-
-.footer-bottom {
+.footer-content-layout {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.footer-brand-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.footer-brand-column p {
+    font-weight: 300;
+    opacity: 0.7;
+}
+.email-contact {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+.email-contact a {
+    color: var(--cream-bg);
+    text-decoration: underline;
+}
+.footer-community-column h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: var(--accent-gold);
+}
+.social-links-box a {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 15px;
+    color: var(--cream-bg);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(250, 246, 240, 0.3);
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+.social-links-box a:hover {
+    color: var(--accent-gold);
+    border-bottom-color: var(--accent-gold);
+}
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(250, 246, 240, 0.08);
+    margin: 50px 0 30px 0;
+}
+.footer-bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding-top: 25px;
+    border-top: 1px solid rgba(250, 246, 240, 0.08);
     font-size: 0.8rem;
-    opacity: 0.6;
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+}
+.fssai-badge {
+    letter-spacing: 1px;
 }
