@@ -33,7 +33,8 @@ body {
 /* --- HEADER NAVIGATION --- */
 .main-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 140px;
     align-items: center;
     padding: 4px 7%;
     background-color: var(--soft-ivory);
@@ -51,9 +52,9 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--chocolate-text);
-    margin-left: 34px;
-    font-size: 0.78rem;
-    font-weight: 500;
+    margin-left: 26px;
+    font-size: 0.92rem;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: color 0.3s ease;
