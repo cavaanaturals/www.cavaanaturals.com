@@ -157,25 +157,25 @@ body {
 
 .story-image-placeholder {
     flex: 1;
-    background:
-        linear-gradient(135deg, rgba(197, 160, 89, 0.12), rgba(255, 253, 248, 0.62)),
-        var(--blush-cream);
-    min-height: 430px;
+    background: transparent;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(197, 160, 89, 0.22);
-    box-shadow: var(--card-shadow);
+    border: none;
+    box-shadow: none;
     overflow: visible;
 }
 
 .welcome-card-box {
-    flex: 0 0 47%;
-    max-width: 520px;
+    flex: 0 0 46%;
+    max-width: 600px;
     min-height: auto;
-    padding: 24px;
-    background-color: var(--soft-ivory);
-    border-radius: 18px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     overflow: visible;
 }
 
@@ -187,9 +187,12 @@ body {
 }
 
 .welcome-card-image {
-    max-height: 390px;
+    width: 100%;
+    height: auto;
+    max-height: none;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 0;
+    display: block;
 }
 
 .placeholder-text-inside {
