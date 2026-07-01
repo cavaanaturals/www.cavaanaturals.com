@@ -148,7 +148,7 @@ body {
 
 .story-container {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 56px;
     max-width: 1220px;
     margin: 0 auto;
@@ -157,13 +157,15 @@ body {
 .story-image-placeholder {
     flex: 1;
     background:
-        linear-gradient(135deg, rgba(197, 160, 89, 0.18), rgba(255, 253, 248, 0.55)),
+        linear-gradient(135deg, rgba(197, 160, 89, 0.10), rgba(255, 253, 248, 0.65)),
         var(--blush-cream);
     min-height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(197, 160, 89, 0.22);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
 }
 
 .placeholder-text-inside {
@@ -174,12 +176,15 @@ body {
     text-align: center;
     padding: 20px;
 }
+
 .section-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 520px;
+    object-fit: contain;
     display: block;
 }
+
 .story-text-card {
     flex: 1;
     background-color: var(--soft-ivory);
@@ -447,7 +452,14 @@ body {
     }
 
     .story-image-placeholder {
-        min-height: 280px;
+        min-height: auto;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
     }
 
     .footer-content-layout,
