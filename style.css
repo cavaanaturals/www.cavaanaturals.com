@@ -500,3 +500,29 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* --- WELCOME CARD SIDE-BY-SIDE FIX --- */
+.welcome-philosophy-container {
+    align-items: center;
+}
+
+.welcome-card-side {
+    flex: 1;
+    max-width: 560px;
+    background-color: var(--soft-ivory);
+    border-radius: 22px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.welcome-card-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .welcome-card-side {
+        max-width: 100%;
+    }
+}
