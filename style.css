@@ -166,16 +166,17 @@ body {
     justify-content: center;
     border: 1px solid rgba(197, 160, 89, 0.22);
     box-shadow: var(--card-shadow);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .welcome-card-box {
-    flex: 0 0 42%;
-    max-width: 460px;
+    flex: 0 0 47%;
+    max-width: 520px;
     min-height: auto;
-    padding: 18px;
+    padding: 24px;
     background-color: var(--soft-ivory);
-    border-radius: 22px;
+    border-radius: 18px;
+    overflow: visible;
 }
 
 .section-image {
