@@ -470,11 +470,11 @@ body {
 }
 /* --- WELCOME CARD FEATURE --- */
 .welcome-card-feature {
-    max-width: 980px;
-    width: 92%;
+    max-width: 680px;
+    width: 82%;
     margin: 0 auto 70px auto;
     background-color: var(--soft-ivory);
-    border-radius: 24px;
+    border-radius: 22px;
     overflow: visible;
     box-shadow: var(--card-shadow);
 }
