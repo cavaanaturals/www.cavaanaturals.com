@@ -474,3 +474,14 @@ body {
         align-items: flex-start;
     }
 }
+/* Philosophy heading */
+.headline-line {
+    display: block;
+    white-space: nowrap;
+}
+
+.story-text-card h2 {
+    font-size: clamp(2.4rem, 3.5vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+}
