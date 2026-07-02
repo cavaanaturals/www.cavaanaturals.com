@@ -147,7 +147,7 @@ body {
 
 .story-container {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1.18fr 0.82fr;
     align-items: center;
     gap: 56px;
     max-width: 1320px;
