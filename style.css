@@ -147,7 +147,7 @@ body {
 
 .story-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     gap: 56px;
     max-width: 1320px;
@@ -168,7 +168,7 @@ body {
 
 .welcome-card-box {
     width: 100%;
-    max-width: 620px;
+    max-width: 700px;
     padding: 0;
     background: transparent;
     border: none;
