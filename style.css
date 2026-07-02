@@ -485,3 +485,14 @@ body {
     line-height: 1.12;
     letter-spacing: -0.03em;
 }
+/* FINAL philosophy headline fix */
+.story-text-card h2 {
+    font-size: 3.25rem !important;
+    line-height: 1.12 !important;
+    letter-spacing: -0.04em !important;
+}
+
+.story-text-card h2 .headline-line {
+    display: block !important;
+    white-space: nowrap !important;
+}
