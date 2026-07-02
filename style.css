@@ -196,7 +196,7 @@ body {
 /* Philosophy text side */
 .story-text-card {
     background-color: var(--soft-ivory);
-    padding: 52px;
+    padding: 40px;
     max-width: 620px;
     width: 100%;
     display: flex;
