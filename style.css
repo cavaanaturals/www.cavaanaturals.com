@@ -44,7 +44,7 @@ body {
 }
 
 .logo-container img {
-    height: 205px;
+    height: 235px;
     width: auto;
     display: block;
     mix-blend-mode: multiply;
@@ -91,6 +91,16 @@ body {
     color: var(--accent-gold);
     font-weight: 600;
     margin-bottom: 18px;
+}
+
+.hero-section-tag {
+    font-size: 0.9rem;
+    letter-spacing: 3.6px;
+}
+
+.philosophy-section-tag {
+    font-size: 0.88rem;
+    letter-spacing: 3.4px;
 }
 
 .hero-overlay-card h1 {
@@ -154,7 +164,6 @@ body {
     margin: 0 auto;
 }
 
-/* Welcome card image side */
 .story-image-placeholder {
     background: transparent;
     min-height: auto;
@@ -193,7 +202,6 @@ body {
     display: block;
 }
 
-/* Philosophy text side */
 .story-text-card {
     background-color: var(--soft-ivory);
     padding: 40px;
@@ -208,11 +216,17 @@ body {
 
 .story-text-card h2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.7rem, 4vw, 4rem);
-    line-height: 1.08;
+    font-size: 3.25rem;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
     font-weight: 400;
     margin-bottom: 26px;
     color: var(--deep-cocoa);
+}
+
+.headline-line {
+    display: block;
+    white-space: nowrap;
 }
 
 .story-text-card p {
@@ -295,18 +309,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.72rem;
-    letter-spacing: 2.4px;
-    color: rgba(43, 27, 18, 0.42);
-    text-transform: uppercase;
+    font-size: 0;
+    color: transparent;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     border: 1px solid rgba(255, 253, 248, 0.75);
 }
 
-.sprinkles-bg { background-color: #F7E8E2; }
-.chocolate-bg { background-color: #E4DDD8; }
-.butterscotch-bg { background-color: #F4E9D6; }
-.cocoa-bg { background-color: #D8CBC2; }
-.drinking-bg { background-color: #E8DDD4; }
+.sprinkles-bg {
+    background-color: #F7E8E2;
+    background-image: url("images/fancy-sprinkles.png");
+}
+
+.chocolate-bg {
+    background-color: #E4DDD8;
+    background-image: url("images/chocolate-sprinkles.png");
+}
+
+.butterscotch-bg {
+    background-color: #F4E9D6;
+    background-image: url("images/butterscotch-nuts.png");
+}
+
+.cocoa-bg {
+    background-color: #D8CBC2;
+    background-image: url("images/cocoa-powder.png");
+}
+
+.drinking-bg {
+    background-color: #E8DDD4;
+    background-image: url("images/drinking-chocolate.png");
+}
 
 .gourmet-product-card h3 {
     font-family: 'Playfair Display', serif;
@@ -431,7 +467,7 @@ body {
     }
 
     .logo-container img {
-        height: 125px;
+        height: 135px;
     }
 
     .nav-links {
@@ -448,6 +484,16 @@ body {
     .hero-box {
         min-height: auto;
         padding: 75px 20px;
+    }
+
+    .hero-section-tag {
+        font-size: 0.78rem;
+        letter-spacing: 3px;
+    }
+
+    .philosophy-section-tag {
+        font-size: 0.78rem;
+        letter-spacing: 3px;
     }
 
     .story-box-section {
@@ -468,31 +514,21 @@ body {
         padding: 42px 28px;
     }
 
+    .story-text-card h2 {
+        font-size: 2.55rem;
+    }
+
+    .headline-line {
+        white-space: normal;
+    }
+
+    .jar-visual-box {
+        height: 240px;
+    }
+
     .footer-content-layout,
     .footer-bottom-bar {
         flex-direction: column;
         align-items: flex-start;
     }
-}
-/* Philosophy heading */
-.headline-line {
-    display: block;
-    white-space: nowrap;
-}
-
-.story-text-card h2 {
-    font-size: clamp(2.4rem, 3.5vw, 3.6rem);
-    line-height: 1.12;
-    letter-spacing: -0.03em;
-}
-/* FINAL philosophy headline fix */
-.story-text-card h2 {
-    font-size: 3.25rem !important;
-    line-height: 1.12 !important;
-    letter-spacing: -0.04em !important;
-}
-
-.story-text-card h2 .headline-line {
-    display: block !important;
-    white-space: nowrap !important;
 }
