@@ -73,21 +73,23 @@ section {
 
 /* --- HERO --- */
 .hero-box {
-    min-height: 74vh;
+    min-height: 82vh;
     background:
-        radial-gradient(circle at top, rgba(226, 201, 143, 0.18), transparent 36%),
-        linear-gradient(180deg, var(--soft-ivory) 0%, var(--cream-bg) 100%);
+        linear-gradient(90deg, rgba(250, 243, 234, 0.94) 0%, rgba(250, 243, 234, 0.82) 38%, rgba(250, 243, 234, 0.18) 68%),
+        url("images/hero-cavaa-dessert-scene.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 90px 20px;
+    justify-content: flex-start;
+    padding: 100px 7%;
 }
 
 .hero-overlay-card {
     background-color: transparent;
-    padding: 30px 20px;
-    max-width: 940px;
-    text-align: center;
+    padding: 30px 0;
+    max-width: 620px;
+    text-align: left;
 }
 
 .section-tag {
@@ -123,7 +125,7 @@ section {
     width: 82px;
     height: 1px;
     background-color: var(--accent-gold);
-    margin: 0 auto 30px auto;
+    margin: 0 0 30px 0;
 }
 
 .hero-overlay-card p {
