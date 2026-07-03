@@ -39,10 +39,10 @@ section {
     display: flex;
     justify-content: flex-start;
     gap: 85px;
-    align-items: flex-start;
+    align-items: center;
     padding: 8px 7% 4px;
     background-color: var(--soft-ivory);
-    border-bottom: 1px solid rgba(43, 27, 18, 0.08);
+    border-bottom: 1px solid rgba(43, 27, 18, 0.05);
     position: sticky;
     top: 0;
     z-index: 20;
@@ -54,7 +54,9 @@ section {
     display: block;
     mix-blend-mode: multiply;
 }
-
+.nav-links {
+    padding-top: 10px;
+}
 .nav-links a {
     text-decoration: none;
     color: var(--chocolate-text);
