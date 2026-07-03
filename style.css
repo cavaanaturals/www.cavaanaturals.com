@@ -75,7 +75,7 @@ section {
 
 .hero-box{
     position:relative;
-    min-height:82vh;
+    min-height:68vh;
     display:flex;
     align-items:center;
     overflow:hidden;
