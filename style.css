@@ -78,7 +78,7 @@ section {
         linear-gradient(90deg, rgba(250, 243, 234, 0.94) 0%, rgba(250, 243, 234, 0.82) 38%, rgba(250, 243, 234, 0.18) 68%),
         url("images/hero-cavaa-dessert-scene.png");
     background-size: cover;
-    background-position: center;
+    background-position: 62% center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -88,7 +88,7 @@ section {
 .hero-overlay-card {
     background-color: transparent;
     padding: 30px 0;
-    max-width: 620px;
+    max-width: 760px;
     text-align: left;
 }
 
