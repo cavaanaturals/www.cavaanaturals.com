@@ -75,7 +75,7 @@ section {
 
 .hero-box{
     position:relative;
-    min-height:88vh;
+    min-height:82vh;
     display:flex;
     align-items:center;
     overflow:hidden;
@@ -110,27 +110,27 @@ section {
 .hero-overlay-card{
     position:relative;
     z-index:3;
-    width:620px;
-    margin-left:8%;
+    width:560px;
+    margin-left:7%;
     text-align:left;
 }
 
 .hero-overlay-card h1{
     font-family:'Playfair Display',serif;
-    font-size:clamp(4rem,6vw,5.8rem);
-    line-height:.98;
-    margin:20px 0;
+    font-size:clamp(3rem,4.6vw,4.6rem);
+    line-height:1.05;
+    margin:18px 0;
     color:#2b1b12;
+    font-weight:400;
 }
 
 .hero-overlay-card p{
-    max-width:520px;
-    font-size:1.15rem;
-    line-height:1.8;
+    max-width:500px;
+    font-size:1.02rem;
+    line-height:1.75;
     color:#6a4b3b;
-    margin-bottom:40px;
+    margin-bottom:34px;
 }
-
 .decorative-line{
     width:90px;
     height:1px;
