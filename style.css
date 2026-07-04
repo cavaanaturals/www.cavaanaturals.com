@@ -88,7 +88,8 @@ section {
 
 .hero-background-image{
     position:relative;
-    width:100%;
+   width: calc(100% + 70px);
+    margin-right: -70px;
     height:520px;
     object-fit:cover;
     object-position:center 35%;
