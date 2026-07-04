@@ -187,11 +187,11 @@ section {
     display: grid;
     grid-template-columns: 58% 42%;
     align-items: center;
-    gap: 56px;
+    gap: 40px;
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0 40px;
 }
-
 .story-image-placeholder {
     background: transparent;
     min-height: auto;
