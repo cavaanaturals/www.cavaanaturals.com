@@ -77,7 +77,7 @@ section {
     position:relative;
     min-height:68vh;
     display:grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 38% 62%;
     align-items:center;
     max-width:1320px;
     margin:0 auto;
