@@ -40,14 +40,19 @@ section {
     justify-content: flex-start;
     gap: 85px;
     align-items: center;
-    padding: 18px 7% 14px;
+    padding: 18px calc((100% - 1320px) / 2) 14px;
     background-color: var(--soft-ivory);
     border-bottom: 1px solid rgba(43, 27, 18, 0.05);
     position: sticky;
     top: 0;
     z-index: 20;
 }
-
+@media (max-width: 1400px){
+    .main-header{
+        padding-left:7%;
+        padding-right:7%;
+    }
+}
 .logo-container img {
     height: 220px;
     width: auto;
