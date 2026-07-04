@@ -79,9 +79,9 @@ section {
     display:grid;
     grid-template-columns: 44% 56%;
     align-items:center;
-    max-width:1400px;
+    max-width:1320px;
     margin:0 auto;
-    padding:0 7%;
+    padding:0;
     overflow:hidden;
     background:#faf6f0;
 }
