@@ -640,87 +640,281 @@ section {
     transform: translateY(-2px);
 }
 /* =========================================
-   DRINKING CHOCOLATE — HERO REFINEMENT
+   DRINKING CHOCOLATE — HEADER
+========================================= */
+
+.product-page .main-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 116px;
+    padding: 12px 7%;
+
+    background: #fffdf8;
+    border-bottom: 1px solid rgba(43, 27, 18, 0.08);
+}
+
+.product-page .logo-container {
+    flex: 0 0 auto;
+}
+
+.product-page .logo-container img {
+    width: auto;
+    height: 92px;
+    max-width: 230px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.product-page .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 38px;
+    padding-top: 0;
+}
+
+.product-page .nav-links a {
+    margin: 0;
+    white-space: nowrap;
+
+    color: #2b1b12;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.product-page .nav-links a:hover {
+    color: #c5a059;
+}
+
+@media (max-width: 1050px) {
+    .product-page .main-header {
+        padding: 10px 5%;
+    }
+
+    .product-page .logo-container img {
+        height: 78px;
+    }
+
+    .product-page .nav-links {
+        gap: 22px;
+    }
+
+    .product-page .nav-links a {
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+    }
+}
+
+@media (max-width: 760px) {
+    .product-page .main-header {
+        position: relative;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 5% 18px;
+    }
+
+    .product-page .logo-container img {
+        height: 76px;
+    }
+
+    .product-page .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+}
+/* =========================================
+   DRINKING CHOCOLATE — HERO
 ========================================= */
 
 .drinking-hero {
-    min-height: 620px;
-    height: 72vh;
-    max-height: 720px;
+    position: relative;
+    display: flex;
     align-items: center;
+    width: 100%;
+    height: 560px;
+    min-height: 560px;
+    overflow: hidden;
+    background: #2b1b12;
 }
 
 .drinking-hero-image {
+    position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
+    max-width: none;
+
     object-fit: cover;
-    object-position: center center;
+    object-position: center 52%;
 }
 
 .drinking-hero-shade {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
     background: linear-gradient(
         90deg,
-        rgba(24, 15, 10, 0.72) 0%,
-        rgba(24, 15, 10, 0.48) 32%,
-        rgba(24, 15, 10, 0.12) 65%,
-        rgba(24, 15, 10, 0.04) 100%
+        rgba(24, 15, 10, 0.78) 0%,
+        rgba(24, 15, 10, 0.62) 27%,
+        rgba(24, 15, 10, 0.25) 52%,
+        rgba(24, 15, 10, 0.04) 78%
     );
 }
 
 .drinking-hero-content {
-    width: min(560px, 42%);
+    position: relative;
+    z-index: 2;
+
+    width: min(520px, 38%);
     margin-left: 7.5%;
-    margin-right: auto;
-    padding-top: 10px;
+    padding: 35px 0;
+
+    color: #ffffff;
 }
 
 .drinking-hero-content .section-tag {
-    margin-bottom: 16px;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
+    margin-bottom: 14px;
+    color: #e2c98f;
+    font-size: 0.76rem;
+    letter-spacing: 0.2em;
 }
 
 .drinking-hero-content h1 {
-    margin-bottom: 20px;
-    font-size: clamp(3.4rem, 4.8vw, 5rem);
-    line-height: 0.96;
-    letter-spacing: -0.02em;
+    margin: 0 0 18px;
+
+    color: #ffffff;
+    font-size: clamp(3.2rem, 4.5vw, 4.65rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+}
+
+.drinking-hero-content .decorative-line {
+    width: 70px;
+    height: 1px;
+    margin: 20px 0;
+    background: #e2c98f;
 }
 
 .drinking-hero-content h2 {
-    margin-bottom: 18px;
-    font-size: clamp(1.35rem, 1.7vw, 1.75rem);
+    margin-bottom: 16px;
+
+    color: #f5ebdd;
+    font-size: 1.45rem;
+    font-weight: 400;
+    font-style: italic;
     line-height: 1.35;
 }
 
 .drinking-hero-content p {
-    max-width: 500px;
-    margin-bottom: 26px;
-    font-size: 1.02rem;
-    line-height: 1.75;
-}
+    max-width: 465px;
+    margin-bottom: 24px;
 
-.drinking-hero-content .decorative-line {
-    width: 72px;
-    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .product-hero-meta {
-    gap: 10px;
-    margin-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 25px;
 }
 
 .product-hero-meta span {
-    padding: 8px 14px;
-    font-size: 0.72rem;
+    padding: 7px 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 999px;
+    background: rgba(35, 20, 12, 0.25);
+
+    color: #ffffff;
+    font-size: 0.67rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
 }
 
 .drinking-hero-content .product-primary-button {
     min-height: 48px;
-    padding: 13px 24px;
-    font-size: 0.76rem;
+    padding: 13px 25px;
+
+    border-color: #c5a059;
+    background: #c5a059;
+    color: #ffffff;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
 }
 
+.drinking-hero-content .product-primary-button:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #2b1b12;
+}
+
+@media (max-width: 1100px) {
+    .drinking-hero {
+        height: 520px;
+        min-height: 520px;
+    }
+
+    .drinking-hero-content {
+        width: min(470px, 43%);
+        margin-left: 6%;
+    }
+
+    .drinking-hero-content h1 {
+        font-size: clamp(2.8rem, 4.4vw, 3.9rem);
+    }
+
+    .drinking-hero-content p {
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .drinking-hero {
+        height: 610px;
+        min-height: 610px;
+    }
+
+    .drinking-hero-image {
+        object-position: 58% center;
+    }
+
+    .drinking-hero-shade {
+        background: linear-gradient(
+            90deg,
+            rgba(24, 15, 10, 0.84) 0%,
+            rgba(24, 15, 10, 0.65) 65%,
+            rgba(24, 15, 10, 0.25) 100%
+        );
+    }
+
+    .drinking-hero-content {
+        width: 86%;
+        margin-left: 7%;
+        padding: 55px 0;
+    }
+
+    .drinking-hero-content h1 {
+        font-size: clamp(2.9rem, 12vw, 3.8rem);
+    }
+}
 /* Laptop screens */
 
 @media (max-width: 1200px) {
