@@ -649,15 +649,15 @@ section {
     z-index: 50;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
+    gap: 95px;
 
-    width: 100%;
-    min-height: 116px;
-    padding: 12px 7%;
+    min-height: 150px;
+    padding: 12px max(7%, calc((100% - 1320px) / 2));
 
     background: #fffdf8;
-    border-bottom: 1px solid rgba(43, 27, 18, 0.08);
+    border-bottom: 1px solid rgba(43, 27, 18, 0.06);
 }
 
 .product-page .logo-container {
@@ -666,8 +666,8 @@ section {
 
 .product-page .logo-container img {
     width: auto;
-    height: 92px;
-    max-width: 230px;
+    height: 145px;
+    max-width: 310px;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
@@ -675,10 +675,8 @@ section {
 .product-page .nav-links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    gap: 38px;
-    padding-top: 0;
+    gap: 48px;
+    padding: 0;
 }
 
 .product-page .nav-links a {
@@ -686,9 +684,9 @@ section {
     white-space: nowrap;
 
     color: #2b1b12;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     font-weight: 600;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.17em;
     text-transform: uppercase;
 }
 
@@ -698,20 +696,21 @@ section {
 
 @media (max-width: 1050px) {
     .product-page .main-header {
-        padding: 10px 5%;
+        gap: 45px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .product-page .logo-container img {
-        height: 78px;
+        height: 120px;
     }
 
     .product-page .nav-links {
-        gap: 22px;
+        gap: 24px;
     }
 
     .product-page .nav-links a {
-        font-size: 0.68rem;
-        letter-spacing: 0.12em;
+        font-size: 0.72rem;
     }
 }
 
@@ -719,12 +718,12 @@ section {
     .product-page .main-header {
         position: relative;
         flex-direction: column;
-        gap: 10px;
-        padding: 12px 5% 18px;
+        gap: 8px;
+        padding: 10px 5% 18px;
     }
 
     .product-page .logo-container img {
-        height: 76px;
+        height: 105px;
     }
 
     .product-page .nav-links {
@@ -734,85 +733,94 @@ section {
     }
 }
 /* =========================================
-   DRINKING CHOCOLATE — HERO
+   DRINKING CHOCOLATE — LUXE HERO
 ========================================= */
 
 .drinking-hero {
     position: relative;
-    display: flex;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: stretch;
+
     width: 100%;
-    height: 560px;
-    min-height: 560px;
+    max-width: 1320px;
+    height: 520px;
+    min-height: 520px;
+    margin: 0 auto;
+
     overflow: hidden;
-    background: #2b1b12;
+    background: #f5ebdd;
 }
 
 .drinking-hero-image {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    inset: auto;
+
+    grid-column: 2;
+    grid-row: 1;
 
     width: 100%;
-    height: 100%;
+    height: 520px;
     max-width: none;
 
     object-fit: cover;
-    object-position: center 52%;
+    object-position: 52% center;
 }
 
 .drinking-hero-shade {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-
-    background: linear-gradient(
-        90deg,
-        rgba(24, 15, 10, 0.78) 0%,
-        rgba(24, 15, 10, 0.62) 27%,
-        rgba(24, 15, 10, 0.25) 52%,
-        rgba(24, 15, 10, 0.04) 78%
-    );
+    display: none;
 }
 
 .drinking-hero-content {
     position: relative;
     z-index: 2;
 
-    width: min(520px, 38%);
-    margin-left: 7.5%;
-    padding: 35px 0;
+    grid-column: 1;
+    grid-row: 1;
 
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    margin: 0;
+    padding: 55px 44px 50px 58px;
+
+    color: #2b1b12;
+    background: #f5ebdd;
 }
 
 .drinking-hero-content .section-tag {
-    margin-bottom: 14px;
-    color: #e2c98f;
+    margin-bottom: 16px;
+
+    color: #b88942;
     font-size: 0.76rem;
-    letter-spacing: 0.2em;
+    font-weight: 600;
+    letter-spacing: 0.22em;
 }
 
 .drinking-hero-content h1 {
-    margin: 0 0 18px;
+    margin: 0 0 22px;
 
-    color: #ffffff;
-    font-size: clamp(3.2rem, 4.5vw, 4.65rem);
+    color: #1f120c;
+    font-size: clamp(3.15rem, 4.1vw, 4.4rem);
     font-weight: 400;
     line-height: 0.98;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.035em;
 }
 
 .drinking-hero-content .decorative-line {
-    width: 70px;
+    width: 85px;
     height: 1px;
-    margin: 20px 0;
-    background: #e2c98f;
+    margin: 2px 0 24px;
+    background: #c5a059;
 }
 
 .drinking-hero-content h2 {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 
-    color: #f5ebdd;
+    color: #5b3a2e;
     font-size: 1.45rem;
     font-weight: 400;
     font-style: italic;
@@ -820,99 +828,127 @@ section {
 }
 
 .drinking-hero-content p {
-    max-width: 465px;
-    margin-bottom: 24px;
+    max-width: 475px;
+    margin-bottom: 28px;
 
-    color: rgba(255, 255, 255, 0.92);
+    color: #5b3a2e;
     font-size: 1rem;
-    line-height: 1.7;
+    font-weight: 300;
+    line-height: 1.8;
 }
 
 .product-hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+    margin: 0 0 28px;
+    gap: 0;
+
+    border-top: 1px solid rgba(197, 160, 89, 0.55);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.55);
 }
 
 .product-hero-meta span {
-    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 999px;
-    background: rgba(35, 20, 12, 0.25);
+    min-height: 54px;
+    padding: 10px 12px;
 
-    color: #ffffff;
-    font-size: 0.67rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
+    border: none;
+    border-right: 1px solid rgba(197, 160, 89, 0.4);
+    border-radius: 0;
+    background: transparent;
+
+    color: #2b1b12;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.07em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-hero-meta span:last-child {
+    border-right: none;
 }
 
 .drinking-hero-content .product-primary-button {
-    min-height: 48px;
-    padding: 13px 25px;
+    align-self: flex-start;
 
-    border-color: #c5a059;
-    background: #c5a059;
-    color: #ffffff;
+    min-height: 50px;
+    padding: 14px 28px;
 
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
+    border: 1px solid #2b1b12;
+    background: transparent;
+    color: #2b1b12;
+
+    font-size: 0.74rem;
+    letter-spacing: 0.14em;
 }
 
 .drinking-hero-content .product-primary-button:hover {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: #2b1b12;
+    border-color: #2b1b12;
+    background: #2b1b12;
+    color: #ffffff;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
     .drinking-hero {
-        height: 520px;
-        min-height: 520px;
+        grid-template-columns: 44% 56%;
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .drinking-hero-image {
+        height: 500px;
     }
 
     .drinking-hero-content {
-        width: min(470px, 43%);
-        margin-left: 6%;
+        padding: 45px 32px 42px 40px;
     }
 
     .drinking-hero-content h1 {
-        font-size: clamp(2.8rem, 4.4vw, 3.9rem);
-    }
-
-    .drinking-hero-content p {
-        font-size: 0.92rem;
+        font-size: clamp(2.8rem, 4.4vw, 3.8rem);
     }
 }
 
 @media (max-width: 760px) {
     .drinking-hero {
-        height: 610px;
-        min-height: 610px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        height: auto;
+        min-height: 0;
     }
 
     .drinking-hero-image {
-        object-position: 58% center;
-    }
-
-    .drinking-hero-shade {
-        background: linear-gradient(
-            90deg,
-            rgba(24, 15, 10, 0.84) 0%,
-            rgba(24, 15, 10, 0.65) 65%,
-            rgba(24, 15, 10, 0.25) 100%
-        );
+        width: 100%;
+        height: 360px;
+        object-position: center;
     }
 
     .drinking-hero-content {
-        width: 86%;
-        margin-left: 7%;
-        padding: 55px 0;
+        padding: 48px 7%;
     }
 
     .drinking-hero-content h1 {
-        font-size: clamp(2.9rem, 12vw, 3.8rem);
+        font-size: clamp(3rem, 12vw, 4rem);
+    }
+
+    .product-hero-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .product-hero-meta span {
+        border-right: none;
+        border-bottom: 1px solid rgba(197, 160, 89, 0.35);
+    }
+
+    .product-hero-meta span:last-child {
+        border-bottom: none;
     }
 }
 /* Laptop screens */
