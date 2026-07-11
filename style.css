@@ -274,16 +274,20 @@ body {
     padding: 0 40px;
 }
 .story-image-placeholder {
+
     background: transparent;
     min-height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    box-shadow: none;
-    overflow: visible;
-}
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    box-shadow:none;
+
+    overflow:hidden;
+    border-radius:8px;
+}
 .welcome-card-box {
     width: 100%;
     max-width: 760px;
