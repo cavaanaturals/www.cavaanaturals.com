@@ -191,7 +191,7 @@ body {
 }
 
 .hero-overlay-card p {
-    max-width: 460px;
+    max-width: 500px;
     margin-bottom: 25px;
 
     color: #6a4b3b;
@@ -209,13 +209,13 @@ body {
 .hero-cta {
     display: inline-block;
 
-    padding: 14px 30px;
+    padding: 16px 38px;
     border: 1px solid #2b1b12;
 
     color: #2b1b12;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     font-weight: 600;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.22em;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -454,13 +454,13 @@ body {
 /* --- PRODUCT COLLECTION --- */
 
 .products-section {
-    padding: 76px 6%;
+    padding: 60px 6%;
     background-color: var(--soft-ivory);
 }
 
 .section-header {
     max-width: 760px;
-    margin: 0 auto 28px;
+    margin: 0 auto 16px;
     text-align: center;
 }
 
@@ -591,14 +591,14 @@ body {
 }
 /* --- BRAND VALUES --- */
 .video-section-box {
-    padding: 110px 7%;
+    padding: 70px 7%;
     background:
         linear-gradient(180deg, var(--cream-bg) 0%, var(--warm-cream) 100%);
 }
 
 .video-section-box .gourmet-product-card {
     background-color: var(--soft-ivory);
-    min-height: 250px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
