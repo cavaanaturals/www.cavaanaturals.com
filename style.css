@@ -1477,7 +1477,24 @@ section {
 .product-closing-message p {
     margin-bottom: 24px;
 }
+.product-closing-message .product-primary-button {
+    min-height: 52px;
+    padding: 15px 32px;
 
+    background: transparent;
+    border: 1px solid #2b1b12;
+    color: #2b1b12;
+
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.product-closing-message .product-primary-button:hover {
+    background: #2b1b12;
+    border-color: #2b1b12;
+    color: #fffdf8;
+}
 @media (max-width: 900px) {
     .details-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
