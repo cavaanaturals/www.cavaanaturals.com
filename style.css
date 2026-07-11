@@ -44,10 +44,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 78px;
+    gap: 76px;
 
-    min-height: 118px;
-    padding: 10px max(6%, calc((100% - 1260px) / 2));
+    min-height: 96px;
+    padding: 6px max(6%, calc((100% - 1260px) / 2));
 
     background-color: var(--soft-ivory);
     border-bottom: 1px solid rgba(43, 27, 18, 0.06);
@@ -60,8 +60,8 @@ section {
 .logo-container img {
     display: block;
     width: auto;
-    height: 104px;
-    max-width: 245px;
+    height: 92px;
+    max-width: 240px;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
@@ -70,15 +70,15 @@ section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px 42px;
-    padding: 0;
+    gap: 12px 38px;
+    padding: 4px 0 0;
 }
 
 .nav-links a {
     margin: 0;
 
     color: var(--chocolate-text);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 600;
     letter-spacing: 0.16em;
     text-decoration: none;
@@ -92,22 +92,25 @@ section {
 
 @media (max-width: 900px) {
     .main-header {
+        position: relative;
         flex-direction: column;
-        gap: 8px;
-        padding: 10px 5% 18px;
+        gap: 4px;
+        min-height: auto;
+        padding: 8px 5% 14px;
     }
 
     .logo-container img {
-        height: 88px;
+        height: 82px;
     }
 
     .nav-links {
         justify-content: center;
-        gap: 10px 20px;
+        gap: 8px 18px;
+        padding-top: 0;
     }
 
     .nav-links a {
-        font-size: 0.68rem;
+        font-size: 0.66rem;
     }
 }
 /* ---------- HERO ---------- */
