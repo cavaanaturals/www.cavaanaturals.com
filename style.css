@@ -28,9 +28,6 @@ body {
     color: var(--chocolate-text);
     line-height: 1.75;
 }
-section {
-    scroll-margin-top: 105px;
-}
 /* =========================================
    HOMEPAGE — FINAL HEADER
 ========================================= */
@@ -369,9 +366,6 @@ section {
     text-align: center;
     padding: 20px;
 }
-#about-preview {
-    scroll-margin-top: 110px;
-}
 /* =========================================
    HOMEPAGE — CAVAA PHILOSOPHY
 ========================================= */
@@ -498,7 +492,45 @@ section {
     max-width: 1260px;
     margin: 0 auto;
 }
+.jar-visual-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 100%;
+    height: 230px;
+    margin-bottom: 22px;
+
+    overflow: hidden;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.sprinkles-bg {
+    background-image: url("images/fancy-sprinkles.png");
+}
+
+.chocolate-bg {
+    background-image: url("images/chocolate-sprinkles.png");
+}
+
+.butterscotch-bg {
+    background-image: url("images/butterscotch-nuts.png");
+}
+
+.cocoa-bg {
+    background-image: url("images/cocoa-powder.png");
+}
+
+.drinking-bg {
+    background-image: url("images/drinking-chocolate.png");
+}
 .gourmet-product-card {
     padding: 28px 22px 30px;
 
@@ -590,25 +622,6 @@ section {
     color: #b88942;
 }
 
-.sprinkles-bg {
-    background-image: url("images/fancy-sprinkles.png");
-}
-
-.chocolate-bg {
-    background-image: url("images/chocolate-sprinkles.png");
-}
-
-.butterscotch-bg {
-    background-image: url("images/butterscotch-nuts.png");
-}
-
-.cocoa-bg {
-    background-image: url("images/cocoa-powder.png");
-}
-
-.drinking-bg {
-    background-image: url("images/drinking-chocolate.png");
-}
 
 /* --- FOOTER --- */
 .premium-footer-box {
@@ -749,7 +762,7 @@ section {
         white-space: normal;
     }
 
-    .sprinkles-bg {
+    .jar-visual-box {
         height: 240px;
     }
 
@@ -1594,28 +1607,53 @@ background-size: contain;
     margin-bottom: 30px;
 }
 /* =========================================
-   HOMEPAGE — OUR STORY SPACING
+   HOMEPAGE — OUR STORY
 ========================================= */
 
 #about-preview.story-box-section {
-    padding: 52px 6%;
+    padding: 38px 6% 48px;
 }
 
 #about-preview .story-container {
+    display: grid;
+    grid-template-columns: 53% 47%;
+    align-items: center;
+
     max-width: 1180px;
     margin: 0 auto;
     padding: 0;
-    gap: 44px;
-}    
-/* =========================================
-   HOMEPAGE — ANCHOR LANDING
-========================================= */
-
-section {
-    scroll-margin-top: 138px;
+    gap: 40px;
 }
 
+#about-preview .story-text-card {
+    max-width: 620px;
+    padding: 34px 38px;
+}
+
+#about-preview .story-text-card h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(2.65rem, 3.7vw, 3.65rem);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+}
+
+#about-preview .story-text-card p {
+    margin-bottom: 14px;
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+/* =========================================
+   HOMEPAGE — FINAL ANCHOR LANDING
+========================================= */
+
+#hero,
+#story,
 #products,
-#about-preview {
-    scroll-margin-top: 138px;
+#ingredients,
+#about-preview,
+#community {
+    scroll-margin-top: 145px;
 }
