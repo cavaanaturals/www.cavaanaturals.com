@@ -31,7 +31,9 @@ body {
 section {
     scroll-margin-top: 105px;
 }
-/* --- HOMEPAGE HEADER --- */
+/* =========================================
+   HOMEPAGE — FINAL HEADER
+========================================= */
 
 .main-header {
     position: sticky;
@@ -40,50 +42,49 @@ section {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 76px;
 
-    min-height: 96px;
-    padding: 6px max(6%, calc((100% - 1260px) / 2));
+    min-height: 122px;
+    padding: 8px 6%;
 
-    background-color: var(--soft-ivory);
+    background: var(--soft-ivory);
     border-bottom: 1px solid rgba(43, 27, 18, 0.06);
 }
 
 .logo-container {
-    flex: 0 0 300px;
+    flex: 0 0 255px;
     overflow: visible;
 }
 
 .logo-container img {
     display: block;
-    width: 285px;
+    width: 245px;
     height: auto;
     max-width: none;
+
     object-fit: contain;
     mix-blend-mode: multiply;
-
-    transform: scale(1.12);
-    transform-origin: left center;
 }
+
 .nav-links {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 12px 38px;
-    padding: 4px 0 0;
+    justify-content: flex-end;
+
+    margin-left: auto;
+    padding: 0;
+    gap: 44px;
 }
 
 .nav-links a {
     margin: 0;
+    white-space: nowrap;
 
     color: var(--chocolate-text);
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 0.16em;
     text-decoration: none;
     text-transform: uppercase;
-    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -1607,19 +1608,14 @@ background-size: contain;
     gap: 44px;
 }    
 /* =========================================
-   HOMEPAGE — ANCHOR LANDING AND SPACING
+   HOMEPAGE — ANCHOR LANDING
 ========================================= */
+
+section {
+    scroll-margin-top: 138px;
+}
 
 #products,
 #about-preview {
-    scroll-margin-top: 105px;
-}
-
-#products.products-section {
-    padding-top: 34px;
-}
-
-#about-preview.story-box-section {
-    padding-top: 34px;
-    padding-bottom: 52px;
+    scroll-margin-top: 138px;
 }
