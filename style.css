@@ -727,13 +727,13 @@ section {
 
 .drinking-hero {
     display: grid;
-    grid-template-columns: 42% 58%;
+    grid-template-columns: 38% 62%;
     align-items: stretch;
 
     width: 100%;
     max-width: 1260px;
-    height: 440px;
-    min-height: 440px;
+    height: 405px;
+    min-height: 405px;
     margin: 0 auto;
 
     overflow: hidden;
@@ -748,7 +748,7 @@ section {
     grid-row: 1;
 
     width: 100%;
-    height: 440px;
+    height: 405px;
     max-width: none;
 
     object-fit: cover;
@@ -769,7 +769,7 @@ section {
 
     width: 100%;
     margin: 0;
-    padding: 38px 38px 36px 46px;
+    padding: 32px 34px 30px 46px;
 
     background: #f5ebdd;
     color: #2b1b12;
@@ -783,9 +783,10 @@ section {
 .drinking-hero-content h1 {
     margin-bottom: 14px;
     color: #1f120c;
-    font-size: clamp(2.75rem, 3.6vw, 3.75rem);
+    font-size: clamp(2.65rem, 3.25vw, 3.45rem);
     font-weight: 400;
-    line-height: 0.98;
+    line-height: 1;
+    letter-spacing: -0.035em;
 }
 
 .drinking-hero-content .decorative-line {
