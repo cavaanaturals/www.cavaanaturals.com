@@ -677,7 +677,7 @@ section {
     transform: translateY(-2px);
 }
 /* =========================================
-   DRINKING CHOCOLATE — HEADER
+   DRINKING CHOCOLATE — COMPACT HEADER
 ========================================= */
 
 .product-page .main-header {
@@ -686,25 +686,21 @@ section {
     z-index: 50;
 
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 95px;
+    justify-content: flex-start;
+    gap: 72px;
 
-    min-height: 150px;
-    padding: 12px max(7%, calc((100% - 1320px) / 2));
+    min-height: 104px;
+    padding: 8px max(6%, calc((100% - 1260px) / 2));
 
     background: #fffdf8;
     border-bottom: 1px solid rgba(43, 27, 18, 0.06);
 }
 
-.product-page .logo-container {
-    flex: 0 0 auto;
-}
-
 .product-page .logo-container img {
     width: auto;
-    height: 145px;
-    max-width: 310px;
+    height: 88px;
+    max-width: 225px;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
@@ -712,78 +708,32 @@ section {
 .product-page .nav-links {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 42px;
     padding: 0;
 }
 
 .product-page .nav-links a {
     margin: 0;
     white-space: nowrap;
-
     color: #2b1b12;
-    font-size: 0.88rem;
+    font-size: 0.76rem;
     font-weight: 600;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
 }
-
-.product-page .nav-links a:hover {
-    color: #c5a059;
-}
-
-@media (max-width: 1050px) {
-    .product-page .main-header {
-        gap: 45px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .product-page .logo-container img {
-        height: 120px;
-    }
-
-    .product-page .nav-links {
-        gap: 24px;
-    }
-
-    .product-page .nav-links a {
-        font-size: 0.72rem;
-    }
-}
-
-@media (max-width: 760px) {
-    .product-page .main-header {
-        position: relative;
-        flex-direction: column;
-        gap: 8px;
-        padding: 10px 5% 18px;
-    }
-
-    .product-page .logo-container img {
-        height: 105px;
-    }
-
-    .product-page .nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 18px;
-    }
-}
 /* =========================================
-   DRINKING CHOCOLATE — LUXE HERO
+   DRINKING CHOCOLATE — COMPACT LUXE HERO
 ========================================= */
 
 .drinking-hero {
-    position: relative;
-
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 42% 58%;
     align-items: stretch;
 
     width: 100%;
-    max-width: 1320px;
-    height: 520px;
-    min-height: 520px;
+    max-width: 1260px;
+    height: 440px;
+    min-height: 440px;
     margin: 0 auto;
 
     overflow: hidden;
@@ -798,11 +748,11 @@ section {
     grid-row: 1;
 
     width: 100%;
-    height: 520px;
+    height: 440px;
     max-width: none;
 
     object-fit: cover;
-    object-position: 52% center;
+    object-position: center;
 }
 
 .drinking-hero-shade {
@@ -810,9 +760,6 @@ section {
 }
 
 .drinking-hero-content {
-    position: relative;
-    z-index: 2;
-
     grid-column: 1;
     grid-row: 1;
 
@@ -822,224 +769,60 @@ section {
 
     width: 100%;
     margin: 0;
-    padding: 55px 44px 50px 58px;
+    padding: 38px 38px 36px 46px;
 
-    color: #2b1b12;
     background: #f5ebdd;
+    color: #2b1b12;
 }
 
 .drinking-hero-content .section-tag {
-    margin-bottom: 16px;
-
-    color: #b88942;
-    font-size: 0.76rem;
-    font-weight: 600;
-    letter-spacing: 0.22em;
+    margin-bottom: 11px;
+    font-size: 0.69rem;
 }
 
 .drinking-hero-content h1 {
-    margin: 0 0 22px;
-
+    margin-bottom: 14px;
     color: #1f120c;
-    font-size: clamp(3.15rem, 4.1vw, 4.4rem);
+    font-size: clamp(2.75rem, 3.6vw, 3.75rem);
     font-weight: 400;
     line-height: 0.98;
-    letter-spacing: -0.035em;
 }
 
 .drinking-hero-content .decorative-line {
-    width: 85px;
-    height: 1px;
-    margin: 2px 0 24px;
-    background: #c5a059;
+    width: 70px;
+    margin: 2px 0 17px;
 }
 
 .drinking-hero-content h2 {
-    margin-bottom: 18px;
-
+    margin-bottom: 12px;
     color: #5b3a2e;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-style: italic;
-    line-height: 1.35;
 }
 
 .drinking-hero-content p {
-    max-width: 475px;
-    margin-bottom: 28px;
-
+    max-width: 430px;
+    margin-bottom: 18px;
     color: #5b3a2e;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.8;
+    font-size: 0.91rem;
+    line-height: 1.65;
 }
 
 .product-hero-meta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    width: 100%;
-    margin: 0 0 28px;
-    gap: 0;
-
-    border-top: 1px solid rgba(197, 160, 89, 0.55);
-    border-bottom: 1px solid rgba(197, 160, 89, 0.55);
+    margin-bottom: 18px;
 }
 
 .product-hero-meta span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 54px;
-    padding: 10px 12px;
-
-    border: none;
-    border-right: 1px solid rgba(197, 160, 89, 0.4);
-    border-radius: 0;
-    background: transparent;
-
-    color: #2b1b12;
-    font-size: 0.72rem;
-    font-weight: 600;
-    line-height: 1.35;
-    letter-spacing: 0.07em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.product-hero-meta span:last-child {
-    border-right: none;
+    min-height: 44px;
+    padding: 8px;
+    font-size: 0.64rem;
 }
 
 .drinking-hero-content .product-primary-button {
-    align-self: flex-start;
-
-    min-height: 50px;
-    padding: 14px 28px;
-
-    border: 1px solid #2b1b12;
-    background: transparent;
-    color: #2b1b12;
-
-    font-size: 0.74rem;
-    letter-spacing: 0.14em;
-}
-
-.drinking-hero-content .product-primary-button:hover {
-    border-color: #2b1b12;
-    background: #2b1b12;
-    color: #ffffff;
-}
-
-@media (max-width: 1050px) {
-    .drinking-hero {
-        grid-template-columns: 44% 56%;
-        height: 500px;
-        min-height: 500px;
-    }
-
-    .drinking-hero-image {
-        height: 500px;
-    }
-
-    .drinking-hero-content {
-        padding: 45px 32px 42px 40px;
-    }
-
-    .drinking-hero-content h1 {
-        font-size: clamp(2.8rem, 4.4vw, 3.8rem);
-    }
-}
-
-@media (max-width: 760px) {
-    .drinking-hero {
-        display: flex;
-        flex-direction: column-reverse;
-
-        height: auto;
-        min-height: 0;
-    }
-
-    .drinking-hero-image {
-        width: 100%;
-        height: 360px;
-        object-position: center;
-    }
-
-    .drinking-hero-content {
-        padding: 48px 7%;
-    }
-
-    .drinking-hero-content h1 {
-        font-size: clamp(3rem, 12vw, 4rem);
-    }
-
-    .product-hero-meta {
-        grid-template-columns: 1fr;
-    }
-
-    .product-hero-meta span {
-        border-right: none;
-        border-bottom: 1px solid rgba(197, 160, 89, 0.35);
-    }
-
-    .product-hero-meta span:last-child {
-        border-bottom: none;
-    }
-}
-/* Laptop screens */
-
-@media (max-width: 1200px) {
-    .drinking-hero {
-        min-height: 560px;
-        height: 68vh;
-    }
-
-    .drinking-hero-content {
-        width: min(500px, 44%);
-        margin-left: 6%;
-    }
-
-    .drinking-hero-content h1 {
-        font-size: clamp(3rem, 4.5vw, 4.25rem);
-    }
-}
-
-/* Mobile and tablet */
-
-@media (max-width: 760px) {
-    .drinking-hero {
-        min-height: 650px;
-        height: auto;
-    }
-
-    .drinking-hero-image {
-        object-position: 58% center;
-    }
-
-    .drinking-hero-shade {
-        background: linear-gradient(
-            90deg,
-            rgba(24, 15, 10, 0.78) 0%,
-            rgba(24, 15, 10, 0.48) 70%,
-            rgba(24, 15, 10, 0.2) 100%
-        );
-    }
-
-    .drinking-hero-content {
-        width: 86%;
-        margin-left: 7%;
-        padding: 80px 0;
-    }
-
-    .drinking-hero-content h1 {
-        font-size: clamp(3rem, 13vw, 4rem);
-    }
-
-    .drinking-hero-content p {
-        font-size: 0.95rem;
-    }
+    min-height: 44px;
+    padding: 11px 22px;
+    font-size: 0.68rem;
 }
 /* =========================================
    PRODUCT STORY
@@ -1594,4 +1377,31 @@ section {
 
 .footer-links a:hover {
     color: #c5a059;
+}
+/* =========================================
+   DRINKING CHOCOLATE — COMPACT SECTION SPACING
+========================================= */
+
+.product-page .product-story-section,
+.product-page .preparation-section,
+.product-page .ways-section,
+.product-page .product-details-section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.product-page .product-story-layout,
+.product-page .preparation-layout {
+    gap: 42px;
+}
+
+.product-page .product-image-frame img,
+.product-page .preparation-image img {
+    height: 330px;
+}
+
+.product-page .preparation-heading,
+.product-page .ways-header,
+.product-page .product-details-header {
+    margin-bottom: 30px;
 }
