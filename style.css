@@ -368,6 +368,9 @@ section {
     text-align: center;
     padding: 20px;
 }
+#about-preview {
+    scroll-margin-top: 110px;
+}
 /* =========================================
    HOMEPAGE — CAVAA PHILOSOPHY
 ========================================= */
@@ -585,6 +588,32 @@ section {
 .discover-product-link:hover {
     color: #b88942;
 }
+
+.sprinkles-bg {
+    background-color: #F7E8E2;
+    background-image: url("images/fancy-sprinkles.png");
+}
+
+.chocolate-bg {
+    background-color: #E4DDD8;
+    background-image: url("images/chocolate-sprinkles.png");
+}
+
+.butterscotch-bg {
+    background-color: #F4E9D6;
+    background-image: url("images/butterscotch-nuts.png");
+}
+
+.cocoa-bg {
+    background-color: #D8CBC2;
+    background-image: url("images/cocoa-powder.png");
+}
+
+.drinking-bg {
+    background-color: #E8DDD4;
+    background-image: url("images/drinking-chocolate.png");
+}
+
 /* --- FOOTER --- */
 .premium-footer-box {
     background-color: var(--deep-cocoa);
@@ -732,6 +761,9 @@ section {
     .footer-bottom-bar {
         flex-direction: column;
         align-items: flex-start;
+        background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
     }
 }
 /* =========================================
