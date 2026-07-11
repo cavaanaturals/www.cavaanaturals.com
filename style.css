@@ -34,48 +34,82 @@ body {
 section {
     scroll-margin-top: 160px;
 }
-/* --- HEADER --- */
+/* --- HOMEPAGE HEADER --- */
+
 .main-header {
-    display: flex;
-    justify-content: flex-start;
-    gap: 85px;
-    align-items: center;
-    padding: 18px calc((100% - 1320px) / 2) 14px;
-    background-color: var(--soft-ivory);
-    border-bottom: 1px solid rgba(43, 27, 18, 0.05);
     position: sticky;
     top: 0;
     z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 78px;
+
+    min-height: 118px;
+    padding: 10px max(6%, calc((100% - 1260px) / 2));
+
+    background-color: var(--soft-ivory);
+    border-bottom: 1px solid rgba(43, 27, 18, 0.06);
 }
-@media (max-width: 1400px){
-    .main-header{
-        padding-left:7%;
-        padding-right:7%;
-    }
+
+.logo-container {
+    flex: 0 0 auto;
 }
+
 .logo-container img {
-    height: 220px;
-    width: auto;
     display: block;
+    width: auto;
+    height: 104px;
+    max-width: 245px;
+    object-fit: contain;
     mix-blend-mode: multiply;
 }
+
 .nav-links {
-    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px 42px;
+    padding: 0;
 }
+
 .nav-links a {
-    text-decoration: none;
+    margin: 0;
+
     color: var(--chocolate-text);
-    margin-left: 60px;
-    font-size: 1.05rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 2.3px;
+    letter-spacing: 0.16em;
+    text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
     color: var(--accent-gold);
 }
 
+@media (max-width: 900px) {
+    .main-header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 5% 18px;
+    }
+
+    .logo-container img {
+        height: 88px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.68rem;
+    }
+}
 /* ---------- HERO ---------- */
 
 .hero-box{
@@ -287,118 +321,104 @@ section {
 }
 
 /* --- PRODUCT COLLECTION --- */
+
 .products-section {
-    padding: 115px 7%;
+    padding: 76px 6%;
     background-color: var(--soft-ivory);
 }
 
 .section-header {
+    max-width: 760px;
+    margin: 0 auto 44px;
     text-align: center;
-    margin-bottom: 68px;
 }
 
 .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.6rem, 5vw, 4.4rem);
-    line-height: 1.1;
-    font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+
     color: var(--deep-cocoa);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.4rem, 3.8vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.08;
 }
 
 .section-header p {
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--mocha);
-    opacity: 0.82;
-    max-width: 760px;
+    max-width: 680px;
     margin: 0 auto;
+
+    color: var(--mocha);
+    font-size: 0.94rem;
+    font-style: italic;
+    line-height: 1.65;
 }
 
 .products-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-    gap: 42px;
-    max-width: 1220px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+
+    max-width: 1260px;
     margin: 0 auto;
 }
 
 .gourmet-product-card {
+    padding: 28px 22px 30px;
+
     background-color: var(--cream-bg);
-    padding: 56px 28px 42px;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    box-shadow: 0 8px 22px rgba(43, 27, 18, 0.04);
+
     text-align: center;
-    box-shadow: 0 8px 24px rgba(43, 27, 18, 0.03);
-    border: 1px solid rgba(197, 160, 89, 0.07);
 }
 
 .jar-visual-box {
-    height: 290px;
-    margin-bottom: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0;
-    color: transparent;
-    text-indent: -9999px;
+
+    height: 230px;
+    margin-bottom: 22px;
+
     overflow: hidden;
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: 108%;
-    border: 1px solid rgba(255, 253, 248, 0.75);
-}
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.sprinkles-bg {
-    background-color: #F7E8E2;
-    background-image: url("images/fancy-sprinkles.png");
-}
-
-.chocolate-bg {
-    background-color: #E4DDD8;
-    background-image: url("images/chocolate-sprinkles.png");
-}
-
-.butterscotch-bg {
-    background-color: #F4E9D6;
-    background-image: url("images/butterscotch-nuts.png");
-}
-
-.cocoa-bg {
-    background-color: #D8CBC2;
-    background-image: url("images/cocoa-powder.png");
-}
-
-.drinking-bg {
-    background-color: #E8DDD4;
-    background-image: url("images/drinking-chocolate.png");
+    color: transparent;
+    font-size: 0;
+    text-indent: -9999px;
 }
 
 .gourmet-product-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.72rem;
-    line-height: 1.25;
-    font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+
     color: #2b1b12;
+    font-family: "Playfair Display", serif;
+    font-size: 1.48rem;
+    font-weight: 500;
+    line-height: 1.22;
 }
 
 .product-weight {
     display: block;
-    font-size: 0.80rem;
+    margin-bottom: 16px;
+
     color: #b88942;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin-bottom: 22px;
 }
 
 .gourmet-product-card p {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.8;
-    letter-spacing: 0.1px;
-    color: #4a3026;
-}
+    margin: 0;
 
+    color: #4a3026;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.65;
+}
 /* --- BRAND VALUES --- */
 .video-section-box {
     padding: 110px 7%;
