@@ -28,11 +28,8 @@ body {
     color: var(--chocolate-text);
     line-height: 1.75;
 }
-#products {
-    scroll-margin-top: 115px;
-}
 section {
-    scroll-margin-top: 115px;
+    scroll-margin-top: 105px;
 }
 /* --- HOMEPAGE HEADER --- */
 
@@ -54,18 +51,21 @@ section {
 }
 
 .logo-container {
-    flex: 0 0 auto;
+    flex: 0 0 300px;
+    overflow: visible;
 }
 
 .logo-container img {
     display: block;
-    width: auto;
-    height: 112px;
-    max-width: 285px;
+    width: 285px;
+    height: auto;
+    max-width: none;
     object-fit: contain;
     mix-blend-mode: multiply;
-}
 
+    transform: scale(1.12);
+    transform-origin: left center;
+}
 .nav-links {
     display: flex;
     align-items: center;
@@ -508,7 +508,7 @@ section {
     text-align: center;
 }
 
-.jar-visual-box {
+.sprinkles-bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,7 +520,7 @@ section {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     color: transparent;
     font-size: 0;
@@ -590,27 +590,22 @@ section {
 }
 
 .sprinkles-bg {
-    background-color: #F7E8E2;
     background-image: url("images/fancy-sprinkles.png");
 }
 
 .chocolate-bg {
-    background-color: #E4DDD8;
     background-image: url("images/chocolate-sprinkles.png");
 }
 
 .butterscotch-bg {
-    background-color: #F4E9D6;
     background-image: url("images/butterscotch-nuts.png");
 }
 
 .cocoa-bg {
-    background-color: #D8CBC2;
     background-image: url("images/cocoa-powder.png");
 }
 
 .drinking-bg {
-    background-color: #E8DDD4;
     background-image: url("images/drinking-chocolate.png");
 }
 
@@ -753,7 +748,7 @@ section {
         white-space: normal;
     }
 
-    .jar-visual-box {
+    .sprinkles-bg {
         height: 240px;
     }
 
@@ -1596,4 +1591,35 @@ background-size: contain;
 .product-page .ways-header,
 .product-page .product-details-header {
     margin-bottom: 30px;
+}
+/* =========================================
+   HOMEPAGE — OUR STORY SPACING
+========================================= */
+
+#about-preview.story-box-section {
+    padding: 52px 6%;
+}
+
+#about-preview .story-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 44px;
+}    
+/* =========================================
+   HOMEPAGE — ANCHOR LANDING AND SPACING
+========================================= */
+
+#products,
+#about-preview {
+    scroll-margin-top: 105px;
+}
+
+#products.products-section {
+    padding-top: 34px;
+}
+
+#about-preview.story-box-section {
+    padding-top: 34px;
+    padding-bottom: 52px;
 }
