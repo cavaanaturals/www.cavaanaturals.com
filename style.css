@@ -368,6 +368,90 @@ section {
     text-align: center;
     padding: 20px;
 }
+/* =========================================
+   HOMEPAGE — CAVAA PHILOSOPHY
+========================================= */
+
+#story.story-box-section {
+    padding: 62px 6%;
+    background: var(--cream-bg);
+}
+
+#story .story-container {
+    display: grid;
+    grid-template-columns: 52% 48%;
+    align-items: center;
+    gap: 46px;
+
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#story .welcome-card-box {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+#story .welcome-card-image {
+    width: 100%;
+    height: 390px;
+    object-fit: contain;
+}
+
+#story .story-text-card {
+    width: 100%;
+    max-width: 520px;
+    padding: 34px 36px;
+
+    background: var(--soft-ivory);
+    border: 1px solid rgba(197, 160, 89, 0.12);
+    box-shadow: 0 14px 34px rgba(43, 27, 18, 0.07);
+}
+
+#story .story-text-card .section-tag {
+    margin-bottom: 12px;
+}
+
+#story .story-text-card h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(2.5rem, 3.4vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+
+#story .story-text-card p {
+    margin-bottom: 13px;
+
+    font-size: 0.91rem;
+    line-height: 1.65;
+}
+
+#story .text-link {
+    margin-top: 7px;
+}
+
+@media (max-width: 900px) {
+    #story.story-box-section {
+        padding: 52px 6%;
+    }
+
+    #story .story-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #story .welcome-card-image {
+        height: auto;
+    }
+
+    #story .story-text-card {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
 
 /* --- PRODUCT COLLECTION --- */
 
