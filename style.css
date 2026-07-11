@@ -1009,139 +1009,179 @@ section {
 ========================================= */
 
 .product-story-section {
-    padding: 110px 8%;
+    padding: 72px 7%;
     background: #faf6f0;
 }
 
 .product-story-layout {
-    max-width: 1250px;
-    margin: auto;
     display: grid;
-    grid-template-columns: 480px 1fr;
-    gap: 90px;
+    grid-template-columns: 46% 54%;
     align-items: center;
+    gap: 64px;
+
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.product-jar-showcase {
+    width: 100%;
+    max-width: 500px;
+    justify-self: center;
 }
 
 .product-image-frame {
-    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0,0,0,.12);
+    border-radius: 18px;
+    box-shadow: 0 20px 48px rgba(43, 27, 18, 0.1);
 }
 
 .product-image-frame img {
     width: 100%;
-    display: block;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .image-caption {
-    margin-top: 18px;
+    margin-top: 14px;
     text-align: center;
+    color: #7d6254;
+    font-size: 0.92rem;
     font-style: italic;
-    color: #8a7468;
+}
+
+.product-story-copy {
+    max-width: 570px;
+}
+
+.product-story-copy .section-tag {
+    margin-bottom: 14px;
 }
 
 .product-story-copy h2 {
-    font-size: 3rem;
-    margin-bottom: 25px;
-    color: #2b1b12;
+    margin-bottom: 18px;
+    color: #1f120c;
+    font-size: clamp(2.6rem, 3.5vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
 }
 
 .product-story-lead {
-    font-size: 1.35rem;
-    color: #c5a059;
-    font-weight: 500;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    color: #5b3a2e;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .product-story-copy p {
-    font-size: 1.08rem;
-    line-height: 2;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
+    color: #5b3a2e;
+    font-size: 0.98rem;
+    line-height: 1.75;
 }
 
 .product-story-copy blockquote {
-    margin-top: 45px;
-    padding-left: 28px;
-    border-left: 3px solid #c5a059;
-    font-size: 1.45rem;
-    font-style: italic;
+    margin-top: 26px;
+    padding: 12px 0 12px 22px;
+
+    border-left: 2px solid #c5a059;
+
     color: #2b1b12;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.45;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 900px) {
+    .product-story-section {
+        padding: 60px 6%;
+    }
 
     .product-story-layout {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
     }
 
     .product-story-copy {
-        text-align: center;
+        max-width: 650px;
+        margin: 0 auto;
     }
 
-    .product-story-copy blockquote {
-        border-left: none;
-        padding-left: 0;
+    .product-image-frame img {
+        height: auto;
     }
-
 }
 /* =========================================
    PREPARATION SECTION
 ========================================= */
 
 .preparation-section {
-    padding: 110px 8%;
-    background: #ffffff;
+    padding: 72px 7%;
+    background: #fffdf8;
 }
 
 .preparation-heading {
-    max-width: 760px;
-    margin: 0 auto 65px;
+    max-width: 720px;
+    margin: 0 auto 46px;
     text-align: center;
 }
 
+.preparation-heading .section-tag {
+    margin-bottom: 14px;
+}
+
 .preparation-heading h2 {
-    margin-bottom: 22px;
-    font-size: clamp(2.4rem, 4vw, 3.6rem);
-    color: #2b1b12;
+    margin-bottom: 16px;
+    color: #1f120c;
+    font-size: clamp(2.6rem, 3.6vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
 }
 
 .preparation-heading p {
-    max-width: 680px;
+    max-width: 650px;
     margin: 0 auto;
+    font-size: 0.98rem;
+    line-height: 1.7;
 }
 
 .preparation-layout {
-    max-width: 1250px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 80px;
+    grid-template-columns: 48% 52%;
     align-items: center;
+    gap: 60px;
+
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .preparation-image {
     overflow: hidden;
-    border-radius: 24px;
-    box-shadow: 0 28px 65px rgba(43, 27, 18, 0.14);
+    border-radius: 18px;
+    box-shadow: 0 20px 48px rgba(43, 27, 18, 0.11);
 }
 
 .preparation-image img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 390px;
     object-fit: cover;
 }
 
 .preparation-steps {
     display: grid;
-    gap: 10px;
+    gap: 0;
 }
 
 .preparation-step {
     display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 22px;
-    padding: 24px 0;
+    grid-template-columns: 52px 1fr;
+    gap: 18px;
+
+    padding: 17px 0;
     border-bottom: 1px solid rgba(43, 27, 18, 0.12);
 }
 
@@ -1150,65 +1190,65 @@ section {
 }
 
 .step-number {
-    font-family: "Playfair Display", serif;
-    font-size: 1.8rem;
-    line-height: 1;
+    padding-top: 4px;
     color: #c5a059;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    line-height: 1;
 }
 
 .step-copy h3 {
-    margin-bottom: 8px;
-    font-size: 1.55rem;
+    margin-bottom: 5px;
     color: #2b1b12;
+    font-size: 1.35rem;
+    font-weight: 400;
 }
 
 .step-copy p {
-    margin-bottom: 0;
-    line-height: 1.75;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
 }
 
 .preparation-tip {
-    max-width: 950px;
-    margin: 65px auto 0;
-    padding: 28px 34px;
-    border: 1px solid rgba(197, 160, 89, 0.45);
+    max-width: 780px;
+    margin: 42px auto 0;
+    padding: 20px 28px;
+
+    border: 1px solid rgba(197, 160, 89, 0.42);
     background: #faf6f0;
     text-align: center;
 }
 
 .preparation-tip span {
     display: block;
-    margin-bottom: 10px;
-    color: #c5a059;
-    font-size: 0.78rem;
+    margin-bottom: 6px;
+
+    color: #b88942;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.17em;
     text-transform: uppercase;
 }
 
 .preparation-tip p {
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
 }
 
 @media (max-width: 900px) {
     .preparation-section {
-        padding: 80px 6%;
+        padding: 60px 6%;
     }
 
     .preparation-layout {
         grid-template-columns: 1fr;
-        gap: 50px;
-    }
-}
-
-@media (max-width: 600px) {
-    .preparation-step {
-        grid-template-columns: 48px 1fr;
-        gap: 14px;
+        gap: 40px;
     }
 
-    .preparation-tip {
-        padding: 24px 20px;
+    .preparation-image img {
+        height: auto;
     }
 }
 /* =========================================
@@ -1288,4 +1328,142 @@ section {
     .way-card img {
         height: 280px;
     }
+}
+/* =========================================
+   PRODUCT DETAILS
+========================================= */
+
+.product-details-section {
+    padding: 78px 7%;
+    background: #f5ebdd;
+}
+
+.product-details-header {
+    max-width: 720px;
+    margin: 0 auto 46px;
+    text-align: center;
+}
+
+.product-details-header h2 {
+    color: #1f120c;
+    font-size: clamp(2.6rem, 3.6vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.detail-card {
+    min-height: 190px;
+    padding: 30px 28px;
+
+    background: #fffdf8;
+    border: 1px solid rgba(197, 160, 89, 0.18);
+    box-shadow: 0 12px 30px rgba(43, 27, 18, 0.05);
+}
+
+.detail-card h3 {
+    margin-bottom: 12px;
+    color: #2b1b12;
+    font-size: 1.45rem;
+    font-weight: 400;
+}
+
+.detail-card p {
+    margin: 0;
+    color: #5b3a2e;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.product-closing-message {
+    max-width: 850px;
+    margin: 55px auto 0;
+    padding-top: 42px;
+
+    border-top: 1px solid rgba(197, 160, 89, 0.45);
+    text-align: center;
+}
+
+.product-closing-message h3 {
+    margin-bottom: 12px;
+    color: #1f120c;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.product-closing-message p {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+    .details-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .product-details-section {
+        padding: 60px 6%;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================
+   DRINKING CHOCOLATE FOOTER
+========================================= */
+
+.site-footer {
+    padding: 52px 7% 42px;
+    background: #1f120c;
+    color: #faf3ea;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 190px;
+    margin: 0 auto 18px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: normal;
+    filter: brightness(0) invert(1);
+}
+
+.site-footer p {
+    margin: 5px 0;
+    color: rgba(250, 243, 234, 0.76);
+    font-size: 0.88rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-top: 24px;
+}
+
+.footer-links a {
+    color: #faf3ea;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: #c5a059;
 }
