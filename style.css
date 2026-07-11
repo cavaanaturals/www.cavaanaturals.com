@@ -29,10 +29,10 @@ body {
     line-height: 1.75;
 }
 #products {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 115px;
 }
 section {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 115px;
 }
 /* --- HOMEPAGE HEADER --- */
 
@@ -60,8 +60,8 @@ section {
 .logo-container img {
     display: block;
     width: auto;
-    height: 92px;
-    max-width: 240px;
+    height: 112px;
+    max-width: 285px;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
