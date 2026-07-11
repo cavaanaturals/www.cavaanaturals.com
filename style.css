@@ -288,6 +288,12 @@ body {
     overflow:hidden;
     border-radius:8px;
 }
+.section-image{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
 .welcome-card-box {
     width: 100%;
     max-width: 760px;
@@ -362,13 +368,11 @@ body {
     padding-bottom: 4px;
 }
 
-.placeholder-text-inside {
-    font-size: 0.78rem;
-    letter-spacing: 2.8px;
-    color: rgba(43, 27, 18, 0.42);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px;
+.section-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 /* =========================================
    HOMEPAGE — CAVAA PHILOSOPHY
