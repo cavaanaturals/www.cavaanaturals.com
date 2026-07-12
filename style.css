@@ -1913,3 +1913,25 @@ grid-template-columns:1fr;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
+/* =========================================
+   PRODUCT CARD LINKS
+========================================= */
+
+.product-image-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.gourmet-product-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-image-link .jar-visual-box {
+    transition: transform 0.3s ease;
+}
+
+.product-image-link:hover .jar-visual-box {
+    transform: scale(1.02);
+}
