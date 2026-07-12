@@ -870,7 +870,7 @@ body {
     justify-content: flex-start;
     gap: 72px;
 
-    min-height: 104px;
+    min-height: 122px;
     padding: 8px max(6%, calc((100% - 1260px) / 2));
 
     background: #fffdf8;
@@ -878,9 +878,10 @@ body {
 }
 
 .product-page .logo-container img {
-    width: auto;
-    height: 88px;
-    max-width: 225px;
+    display: block;
+    width: 245px;
+    height: auto;
+    max-width: none;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
