@@ -870,8 +870,8 @@ body {
     justify-content: flex-start;
     gap: 72px;
 
-    min-height: 122px;
-    padding: 8px max(6%, calc((100% - 1260px) / 2));
+    min-height: 104px;
+    padding: 4px max(6%, calc((100% - 1260px) / 2));
 
     background: #fffdf8;
     border-bottom: 1px solid rgba(43, 27, 18, 0.06);
@@ -879,7 +879,7 @@ body {
 
 .product-page .logo-container img {
     display: block;
-    width: 245px;
+    width: 225px;
     height: auto;
     max-width: none;
     object-fit: contain;
@@ -913,8 +913,8 @@ body {
 
     width: 100%;
     max-width: 1260px;
-    height: 520px;
-    min-height: 520px;
+    height: 450px;
+    min-height: 450px;
     margin: 0 auto;
 
     overflow: hidden;
@@ -929,7 +929,7 @@ body {
     grid-row: 1;
 
     width: 100%;
-    height: 520px;
+    height: 450px;
     max-width: none;
 
     object-fit: cover;
