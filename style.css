@@ -870,7 +870,7 @@ body {
     justify-content: flex-start;
     gap: 72px;
 
-    min-height: 104px;
+    min-height: 92px;
     padding: 4px max(6%, calc((100% - 1260px) / 2));
 
     background: #fffdf8;
