@@ -1758,3 +1758,10 @@ grid-template-columns:1fr;
 }
 
 }
+/* Product-page anchor landing position */
+
+.product-page #preparation,
+.product-page #ways-to-enjoy,
+.product-page #product-details {
+    scroll-margin-top: 125px;
+}
