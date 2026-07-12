@@ -198,7 +198,17 @@ body {
     font-size: 0.94rem;
     line-height: 1.7;
 }
+.hero-subtext {
+    max-width: 470px;
+    margin-top: -10px;
+    margin-bottom: 24px;
 
+    color: #8a6a58;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
+}
 .hero-box .decorative-line {
     width: 76px;
     height: 1px;
