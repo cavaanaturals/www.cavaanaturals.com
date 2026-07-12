@@ -586,23 +586,27 @@ body {
     font-size: 1.48rem;
     font-weight: 500;
     line-height: 1.22;
+    min-height: 76px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .product-tagline {
-    margin: 6px 0 14px;
+    min-height: 34px;
+    margin: 7px 0 10px;
 
-    color: #b08a55;
-
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-
-    font-size: 0.92rem;
-
-    line-height: 1.4;
+    color: #8a623f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.025em;
 }
 .product-weight {
     display: block;
     margin-bottom: 16px;
-
+    min-height: 24px;
+    margin: 0 0 20px;
     color: #b88942;
     font-size: 0.7rem;
     font-weight: 600;
@@ -618,6 +622,11 @@ body {
     font-weight: 400;
     line-height: 1.65;
 }
+
+.gourmet-product-card > p:not(.product-tagline) {
+    margin-top: 0;
+}
+
 /* --- BRAND VALUES --- */
 .video-section-box {
     padding: 70px 7%;
