@@ -1055,7 +1055,7 @@ body {
 
 .product-jar-showcase {
     width: 100%;
-    max-width: 500px;
+    max-width: 440px;
     justify-self: center;
 }
 
@@ -1067,7 +1067,7 @@ body {
 
 .product-image-frame img {
     width: 100%;
-    height: 430px;
+    height: 390px;
     object-fit: cover;
     object-position: center;
 }
