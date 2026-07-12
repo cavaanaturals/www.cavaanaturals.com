@@ -1666,3 +1666,94 @@ body {
 #community {
     scroll-margin-top: 145px;
 }
+/* =========================================
+   DRINKING CHOCOLATE — QUICK BENEFITS
+========================================= */
+
+.product-benefits-section{
+
+    padding:42px 7%;
+
+    background:#fffdf8;
+
+}
+
+.product-benefits-grid{
+
+    max-width:1120px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.product-benefit-card{
+
+    padding:34px 30px;
+
+    background:white;
+
+    border:1px solid rgba(197,160,89,.18);
+
+    box-shadow:0 12px 30px rgba(43,27,18,.06);
+
+    transition:.28s;
+
+}
+
+.product-benefit-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 22px 42px rgba(43,27,18,.12);
+
+}
+
+.benefit-kicker{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:#c5a059;
+
+    font-size:.72rem;
+
+    font-weight:600;
+
+    letter-spacing:.18em;
+
+}
+
+.product-benefit-card h3{
+
+    margin-bottom:10px;
+
+    font-size:1.45rem;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.product-benefit-card p{
+
+    font-size:.9rem;
+
+    line-height:1.65;
+
+}
+
+@media(max-width:900px){
+
+.product-benefits-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
