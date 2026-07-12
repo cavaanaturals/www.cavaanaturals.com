@@ -580,34 +580,27 @@ body {
 
 .gourmet-product-card h3 {
     margin-bottom: 8px;
-
     color: #2b1b12;
     font-family: "Playfair Display", serif;
     font-size: 1.48rem;
     font-weight: 500;
     line-height: 1.22;
     min-height: 76px;
+    margin-top: 24px;
+margin-bottom: 12px;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .product-tagline {
     min-height: 22px;
-
     margin: 8px 0 10px;
-
     color: #8A623F;
-
     font-family: "Montserrat", sans-serif;
-
-    font-size: 0.78rem;
-
-    font-weight: 700;
-
-    letter-spacing: 0.04em;
-
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
     line-height: 1.35;
-
     text-transform: uppercase;
 }
 .product-weight {
