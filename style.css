@@ -593,11 +593,11 @@ align-items: center;
 justify-content: center;
 }
 .product-tagline {
-    min-height: 20px;
-    margin: 8px 0 8px;
+    min-height: 10px;
+    margin: 8px 0 5px;
     color: #8A623F;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.58rem;      /* smaller */
+    font-size: 0.5rem;      /* smaller */
     font-weight: 700;        /* bold */
     letter-spacing: 0.05em;
     line-height: 1;
