@@ -656,6 +656,7 @@ justify-content: center;
     letter-spacing: 0.12em;
     text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .discover-product-link:hover {
