@@ -2,7 +2,7 @@
 :root {
     --cream-bg: #FAF3EA;
     --warm-cream: #F5EBDD;
-    --soft-ivory: #FFFDF8;
+    --soft-ivory: #FFFDF8; scroll-margin-top: 110px;
     --chocolate-text: #2B1B12;
     --deep-cocoa: #1F120C;
     --mocha: #5B3A2E;
@@ -1182,7 +1182,7 @@ justify-content: center;
 ========================================= */
 
 .preparation-section {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 140px;
     padding: 58px 7%;
     background: #fffdf8;
 }
