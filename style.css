@@ -1182,6 +1182,7 @@ justify-content: center;
 ========================================= */
 
 .preparation-section {
+    scroll-margin-top: 110px;
     padding: 58px 7%;
     background: #fffdf8;
 }
