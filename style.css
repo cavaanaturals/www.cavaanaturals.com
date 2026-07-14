@@ -1294,7 +1294,7 @@ justify-content: center;
 }
 
 .preparation-tip::before {
-    content: "ICE";
+    content: "TIP";
 
     position: absolute;
     top: 50%;
