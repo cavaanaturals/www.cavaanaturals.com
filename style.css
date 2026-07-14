@@ -966,7 +966,7 @@ justify-content: center;
     max-width: none;
 
     object-fit: cover;
-    object-position: center;
+    object-position: center 75%;
 }
 
 .drinking-hero-shade {
