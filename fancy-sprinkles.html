@@ -10,9 +10,9 @@
     >
 
     <meta
-    name="description"
-    content="Discover Cavaa Fancy Sprinkles — vibrant, joyful dessert sprinkles created to transform cakes, cupcakes, donuts, ice creams and celebrations."
->
+        name="description"
+        content="Discover Cavaa Fancy Sprinkles — vibrant, joyful dessert sprinkles created to transform cakes, cupcakes, donuts, ice creams and celebrations."
+    >
     <title>Fancy Sprinkles | Cavaa Naturals</title>
 
     <link rel="stylesheet" href="style.css">
@@ -52,15 +52,15 @@
 
         <nav class="nav-links">
 
-    <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
 
-    <a href="#decorate">Decorate</a>
+            <a href="#decorate">Decorate</a>
 
-    <a href="#ways-to-enjoy">Ways to Enjoy</a>
+            <a href="#ways-to-enjoy">Ways to Enjoy</a>
 
-    <a href="#product-details">Details</a>
+            <a href="#product-details">Details</a>
 
-</nav>
+        </nav>
 
     </header>
 
@@ -103,7 +103,7 @@
 
                 <div class="product-hero-meta">
 
-                    <span>Net Weight 200 g</span>
+                    <span>Net Weight 175 g</span>
 
                     <span>100% Vegetarian</span>
 
@@ -111,18 +111,21 @@
 
                 </div>
 
-              <a
-    href="#decorate"
-    class="hero-cta product-primary-button"
->
-    Decorate Your Dessert
-</a>
+                <a
+                    href="#decorate"
+                    class="hero-cta product-primary-button"
+                >
+                    Decorate Your Dessert
+                </a>
+
             </div>
 
         </section>
-        <!-- DECORATE YOUR DESSERT -->
 
-        <section class="preparation-section"  id="decorate">
+
+        <!-- DECORATE YOUR DESSERT (VIDEO + 3 STEPS) -->
+
+        <section class="preparation-section" id="decorate">
 
             <div class="preparation-heading">
 
@@ -131,7 +134,7 @@
                 </span>
 
                 <h2>
-                   Every Dessert Deserves Celebration.
+                    Every Dessert Deserves Celebration.
                 </h2>
 
                 <p>
@@ -144,19 +147,26 @@
 
             <div class="preparation-layout">
 
+                <!-- Left Column: Autoplaying Seamless Video Loop -->
                 <div class="preparation-media">
 
-                    <img
-                        src="images/fancy-sprinkles-rainbow-cake.png"
-                        alt="A celebration cake decorated with Cavaa Fancy Sprinkles"
+                    <video 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline 
+                        preload="metadata"
                         class="preparation-placeholder-image"
+                        style="width: 100%; height: 100%; min-height: 380px; object-fit: cover; border-radius: 16px; display: block;"
                     >
-
-                    <!-- Later, this image can be replaced with a decorating video -->
+                        <source src="videos/fancy-sprinkles.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
                 </div>
 
 
+                <!-- Right Column: 3 Steps -->
                 <div class="preparation-steps">
 
                     <div class="preparation-step">
@@ -237,95 +247,97 @@
             </div>
 
         </section>
+
         
-<!-- WAYS TO ENJOY -->
+        <!-- WAYS TO ENJOY -->
 
-<section
-    id="ways-to-enjoy"
-    class="ways-section"
->
+        <section
+            id="ways-to-enjoy"
+            class="ways-section"
+        >
 
-    <div class="ways-header">
+            <div class="ways-header">
 
-        <span class="section-tag">
-           WAYS TO ENJOY
-        </span>
+                <span class="section-tag">
+                    WAYS TO ENJOY
+                </span>
 
-        <h2>
-            One Jar. Endless Celebrations.
-        </h2>
-
-        <p>
-            Discover beautiful ways to decorate cakes, cupcakes, cookies, milkshakes and desserts with Cavaa Fancy Sprinkles.
-        </p>
-
-    </div>
-
-
-    <div class="ways-grid">
-
-        <article class="way-card">
-
-            <img
-                src="images/fancy-sprinkles-rainbow-cake.png"
-                alt="Rainbow celebration cake decorated with Cavaa Fancy Sprinkles"
-            >
-
-            <div class="way-card-copy">
-
-                <h3>Celebration Cakes</h3>
+                <h2>
+                    One Jar. Endless Celebrations.
+                </h2>
 
                 <p>
-                    Turn birthdays, anniversaries and celebrations into unforgettable moments.
+                    Discover beautiful ways to decorate cakes, cupcakes, cookies, milkshakes and desserts with Cavaa Fancy Sprinkles.
                 </p>
 
             </div>
 
-        </article>
+
+            <div class="ways-grid">
+
+                <article class="way-card">
+
+                    <img
+                        src="images/fancy-sprinkles-rainbow-cake.png"
+                        alt="Rainbow celebration cake decorated with Cavaa Fancy Sprinkles"
+                    >
+
+                    <div class="way-card-copy">
+
+                        <h3>Celebration Cakes</h3>
+
+                        <p>
+                            Turn birthdays, anniversaries and celebrations into unforgettable moments.
+                        </p>
+
+                    </div>
+
+                </article>
 
 
-        <article class="way-card">
+                <article class="way-card">
 
-            <img
-                src="images/fancy-sprinkles-donuts.png"
-                alt="Donuts decorated with Cavaa Fancy Sprinkles"
-            >
+                    <img
+                        src="images/fancy-sprinkles-donuts.png"
+                        alt="Donuts decorated with Cavaa Fancy Sprinkles"
+                    >
 
-            <div class="way-card-copy">
+                    <div class="way-card-copy">
 
-                <h3>Donuts & Cupcakes</h3>
+                        <h3>Donuts & Cupcakes</h3>
 
-                <p>
-                    Add colourful crunch and joyful finishing touches to every bake.
-                </p>
+                        <p>
+                            Add colourful crunch and joyful finishing touches to every bake.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="way-card">
+
+                    <img
+                        src="images/fancy-sprinkles-milkshake.png"
+                        alt="Milkshake decorated with Cavaa Fancy Sprinkles"
+                    >
+
+                    <div class="way-card-copy">
+
+                        <h3>Ice Cream & Milkshakes</h3>
+
+                        <p>
+                            Create café-style desserts that everyone will want to photograph first.
+                        </p>
+
+                    </div>
+
+                </article>
 
             </div>
 
-        </article>
+        </section>
 
-
-        <article class="way-card">
-
-            <img
-                src="images/fancy-sprinkles-milkshake.png"
-                alt="Milkshake decorated with Cavaa Fancy Sprinkles"
-            >
-
-            <div class="way-card-copy">
-
-                <h3>Ice Cream & Milkshakes</h3>
-
-                <p>
-                    Create café-style desserts that everyone will want to photograph first.
-                </p>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
 
         <!-- PRODUCT DETAILS -->
 
@@ -353,7 +365,7 @@
 
                     <img
                         src="images/fancy-sprinkles.png"
-                        alt="Cavaa Fancy Sprinkles 200 gram jar"
+                        alt="Cavaa Fancy Sprinkles 175 gram jar"
                     >
 
                 </div>
@@ -366,10 +378,10 @@
                         <h3>Ingredients</h3>
 
                         <p>
-    Premium sugar sprinkles with carefully selected
-    colours and quality ingredients crafted for
-    vibrant decorating.
-</p>
+                            Premium sugar sprinkles with carefully selected
+                            colours and quality ingredients crafted for
+                            vibrant decorating.
+                        </p>
 
                     </div>
 
@@ -379,9 +391,9 @@
                         <h3>Perfect For</h3>
 
                         <p>
-    Cakes, cupcakes, cookies, donuts,
-    brownies, ice creams and milkshakes.
-</p>
+                            Cakes, cupcakes, cookies, donuts,
+                            brownies, ice creams and milkshakes.
+                        </p>
 
                     </div>
 
@@ -402,7 +414,7 @@
 
                         <h3>Net Weight</h3>
 
-                        <p>200 g</p>
+                        <p>175 g</p>
 
                     </div>
 
@@ -421,9 +433,10 @@
                         <h3>Crafted With Care</h3>
 
                         <p>
-    Thoughtfully crafted to add colour,
-    joy and celebration to every dessert.
-</p>
+                            Thoughtfully crafted to add colour,
+                            joy and celebration to every dessert.
+                        </p>
+
                     </div>
 
                 </div>
@@ -451,6 +464,7 @@
             </div>
 
         </section>
+
     </main>
 
 
@@ -459,8 +473,9 @@
     <footer class="site-footer">
 
         <h3 class="footer-brand-name">
-    Cavaa Naturals
-</h3>
+            Cavaa Naturals
+        </h3>
+
         <p>
             Honest Ingredients. Elevated Flavours.
         </p>
