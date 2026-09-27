@@ -123,7 +123,7 @@
 
         </section>
 
-        <!-- MAKE YOUR CUP -->
+        <!-- MAKE YOUR CUP (VIDEO + STEPS) -->
 
         <section
             id="preparation"
@@ -141,32 +141,36 @@
                 </h2>
 
                 <p>
-
                     Rich café-style drinking chocolate in four beautifully
                     simple steps.
-
                 </p>
 
             </div>
 
 
-            <div class="preparation-layout">
+            <div class="preparation-layout" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 48px; max-width: 1050px; margin: 0 auto;">
 
-                <div class="preparation-media">
+                <!-- Left Column: Autoplaying Square Video Loop -->
+                <div class="preparation-media" style="flex: 0 0 420px; max-width: 420px; width: 100%;">
 
-                    <img
-                        src="images/drinking-chocolate-cup.png"
-                        alt="Preparing Cavaa Signature Drinking Chocolate"
+                    <video 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline 
+                        preload="metadata"
                         class="preparation-placeholder-image"
+                        style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; display: block; box-shadow: 0 8px 24px rgba(0,0,0,0.06);"
                     >
-
-                    <!-- Later this image will become a video -->
+                        <source src="videos/drinking-chocolate.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
                 </div>
 
 
-                <div class="preparation-steps">
-
+                <!-- Right Column: Preparation Steps -->
+                <div class="preparation-steps" style="flex: 1 1 360px; max-width: 520px;">
 
                     <div class="preparation-step">
 
@@ -256,15 +260,16 @@
                 </span>
 
                 <p>
-
                     Make a smooth chocolate paste, add chilled milk,
                     pour over ice and stir.
-
                 </p>
 
             </div>
-  </section>
-                    <!-- WAYS TO ENJOY -->
+
+        </section>
+
+
+        <!-- WAYS TO ENJOY -->
 
         <section
             id="ways-to-enjoy"
@@ -282,10 +287,8 @@
                 </h2>
 
                 <p>
-
                     More than a drink — discover all the little ways
                     Cavaa can become part of your everyday rituals.
-
                 </p>
 
             </div>
@@ -302,13 +305,14 @@
 
                     <div class="way-card-copy">
 
-                       <h3>
-    Classic Café Cup
-</h3>
+                        <h3>
+                            Classic Café Cup
+                        </h3>
 
-<p>
-    Rich, velvety and beautifully comforting.
-</p>
+                        <p>
+                            Rich, velvety and beautifully comforting.
+                        </p>
+
                     </div>
 
                 </article>
@@ -323,13 +327,14 @@
 
                     <div class="way-card-copy">
 
-                       <h3>
-    Iced Chocolate
-</h3>
+                        <h3>
+                            Iced Chocolate
+                        </h3>
 
-<p>
-    Smooth, refreshing and perfect over ice.
-</p>
+                        <p>
+                            Smooth, refreshing and perfect over ice.
+                        </p>
+
                     </div>
 
                 </article>
@@ -345,12 +350,12 @@
                     <div class="way-card-copy">
 
                         <h3>
-    Beyond the Cup
-</h3>
+                            Beyond the Cup
+                        </h3>
 
-<p>
-    Blend into milkshakes, brownies, cakes and café-style desserts.
-</p>
+                        <p>
+                            Blend into milkshakes, brownies, cakes and café-style desserts.
+                        </p>
 
                     </div>
 
@@ -486,6 +491,7 @@
             </div>
 
         </section>
+
     </main>
 
 
@@ -494,8 +500,9 @@
     <footer class="site-footer">
 
         <h3 class="footer-brand-name">
-    Cavaa Naturals
-</h3>
+            Cavaa Naturals
+        </h3>
+
         <p>
             Honest Ingredients. Elevated Flavours.
         </p>
