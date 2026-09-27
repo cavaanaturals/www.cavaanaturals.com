@@ -10,9 +10,9 @@
     >
 
     <meta
-    name="description"
-    content="Discover Cavaa Chocolate Sprinkles — rich chocolate strands crafted to decorate cakes, brownies, pancakes, desserts and ice creams with irresistible chocolate goodness."
->
+        name="description"
+        content="Discover Cavaa Chocolate Sprinkles — rich chocolate strands crafted to decorate cakes, brownies, pancakes, desserts and ice creams with irresistible chocolate goodness."
+    >
     <title>Chocolate Sprinkles | Cavaa Naturals</title>
 
     <link rel="stylesheet" href="style.css">
@@ -52,15 +52,15 @@
 
         <nav class="nav-links">
 
-    <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
 
-    <a href="#decorate">Decorate</a>
+            <a href="#decorate">Decorate</a>
 
-    <a href="#ways-to-enjoy">Ways to Enjoy</a>
+            <a href="#ways-to-enjoy">Ways to Enjoy</a>
 
-    <a href="#product-details">Details</a>
+            <a href="#product-details">Details</a>
 
-</nav>
+        </nav>
 
     </header>
 
@@ -68,7 +68,7 @@
     <main>
 
         <!-- HERO SECTION -->
-    
+
         <section class="drinking-hero chocolate-sprinkles-hero">
 
             <img
@@ -97,14 +97,14 @@
                 </h2>
 
                 <p>
-    Rich chocolate strands crafted to bring elegant texture,
-    delicious crunch and irresistible chocolate character to
-    cakes, brownies, pancakes, ice creams and everyday desserts.
-</p>
+                    Rich chocolate strands crafted to bring elegant texture,
+                    delicious crunch and irresistible chocolate character to
+                    cakes, brownies, pancakes, ice creams and everyday desserts.
+                </p>
 
                 <div class="product-hero-meta">
 
-                    <span>Net Weight 200 g</span>
+                    <span>Net Weight 175 g</span>
 
                     <span>100% Vegetarian</span>
 
@@ -112,20 +112,21 @@
 
                 </div>
 
-              <a
-    href="#decorate"
-    class="hero-cta product-primary-button"
->
-    Start Creating
-</a>
+                <a
+                    href="#decorate"
+                    class="hero-cta product-primary-button"
+                >
+                    Start Creating
+                </a>
+
             </div>
 
         </section>
-        
-        
-        <!-- DECORATE YOUR DESSERT -->
 
-        <section class="preparation-section"  id="decorate">
+
+        <!-- DECORATE YOUR DESSERT (VIDEO + 3 STEPS) -->
+
+        <section class="preparation-section" id="decorate">
 
             <div class="preparation-heading">
 
@@ -134,33 +135,40 @@
                 </span>
 
                 <h2>
-                Every Sprinkle Adds Chocolate Magic.
+                    Every Sprinkle Adds Chocolate Magic.
                 </h2>
 
                 <p>
-    Transform everyday desserts into irresistible chocolate creations
-    in three beautifully simple steps.
+                    Transform everyday desserts into irresistible chocolate creations
+                    in three beautifully simple steps.
                 </p>
 
             </div>
 
 
-            <div class="preparation-layout">
+            <div class="preparation-layout" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 48px; max-width: 1050px; margin: 0 auto;">
 
-                <div class="preparation-media">
+                <!-- Left Column: Autoplaying Square Video Loop -->
+                <div class="preparation-media" style="flex: 0 0 420px; max-width: 420px; width: 100%;">
 
-                    <img
-                        src="images/chocolate-sprinkles-hero.png"
-                        alt="Outdoor dessert platter featuring Cavaa Chocolate Sprinkles across pancakes, cookies, brownies and café-style treats"
+                    <video 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline 
+                        preload="metadata"
                         class="preparation-placeholder-image"
+                        style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; display: block; box-shadow: 0 8px 24px rgba(0,0,0,0.06);"
                     >
-
-                    <!-- Later, this image can be replaced with a decorating video -->
+                        <source src="videos/chocolate-sprinkles.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
                 </div>
 
 
-                <div class="preparation-steps">
+                <!-- Right Column: 3 Steps -->
+                <div class="preparation-steps" style="flex: 1 1 360px; max-width: 520px;">
 
                     <div class="preparation-step">
 
@@ -170,12 +178,12 @@
 
                         <div class="step-copy">
 
-                           <h3>Sprinkle</h3>
+                            <h3>Sprinkle</h3>
 
-<p>
-    Add Cavaa Chocolate Sprinkles generously over
-    frosting, whipped cream, glaze or warm chocolate.
-</p>
+                            <p>
+                                Add Cavaa Chocolate Sprinkles generously over
+                                frosting, whipped cream, glaze or warm chocolate.
+                            </p>
 
                         </div>
 
@@ -192,10 +200,10 @@
 
                             <h3>Enjoy</h3>
 
-<p>
-    Finish with rich chocolate texture and a beautiful
-    café-style touch.
-</p>
+                            <p>
+                                Finish with rich chocolate texture and a beautiful
+                                café-style touch.
+                            </p>
 
                         </div>
 
@@ -233,101 +241,105 @@
                 </span>
 
                 <p>
-    Add the sprinkles while frosting, glaze or chocolate is still soft
-    so every strand stays beautifully in place.
-</p>
+                    Add the sprinkles while frosting, glaze or chocolate is still soft
+                    so every strand stays beautifully in place.
+                </p>
 
             </div>
 
         </section>
-        
-<!-- WAYS TO ENJOY -->
-
-<section
-    id="ways-to-enjoy"
-    class="ways-section"
->
-
-    <div class="ways-header">
-
-        <span class="section-tag">
-           WAYS TO ENJOY
-        </span>
-
-        <h2>
-            One Jar. Endless Chocolate Possibilities.
-        </h2>
-
-        <p>
-    From weekend pancakes to rich brownies and frozen desserts,
-    Cavaa Chocolate Sprinkles add texture, flavour and a beautiful finishing touch.
-        </p>
-
-    </div>
 
 
-    <div class="ways-grid">
+        <!-- WAYS TO ENJOY -->
 
-        <article class="way-card">
+        <section
+            id="ways-to-enjoy"
+            class="ways-section"
+        >
 
-            <img
-                src="images/chocolate-sprinkles-brownies.png"
-                alt="Brownies topped with Cavaa Chocolate Sprinkles"
-            >
+            <div class="ways-header">
 
-            <div class="way-card-copy">
+                <span class="section-tag">
+                    WAYS TO ENJOY
+                </span>
 
-                <h3>Brownies &amp; Bakes</h3>
-
-<p>
-    Add rich chocolate texture to brownies, cakes and freshly baked treats.
-</p>
-
-            </div>
-
-        </article>
-
-
-        <article class="way-card">
-
-            <img
-                src="images/chocolate-sprinkles-pancakes.png"
-                alt="Pancakes decorated with Cavaa Chocolate Sprinkles"
-            >
-
-            <div class="way-card-copy">
-
-                <h3>Pancakes &amp; Waffles</h3>
+                <h2>
+                    One Jar. Endless Chocolate Possibilities.
+                </h2>
 
                 <p>
-    Turn weekend breakfasts into café-style indulgence with a touch of chocolate.
+                    From weekend pancakes to rich brownies and frozen desserts,
+                    Cavaa Chocolate Sprinkles add texture, flavour and a beautiful finishing touch.
                 </p>
+
             </div>
 
-        </article>
+
+            <div class="ways-grid">
+
+                <article class="way-card">
+
+                    <img
+                        src="images/chocolate-sprinkles-brownies.png"
+                        alt="Brownies topped with Cavaa Chocolate Sprinkles"
+                    >
+
+                    <div class="way-card-copy">
+
+                        <h3>Brownies &amp; Bakes</h3>
+
+                        <p>
+                            Add rich chocolate texture to brownies, cakes and freshly baked treats.
+                        </p>
+
+                    </div>
+
+                </article>
 
 
-        <article class="way-card">
+                <article class="way-card">
 
-            <img
-                src="images/chocolate-sprinkles-icecream.png"
-                alt="Ice cream finished with Cavaa Chocolate Sprinkles"
-            >
+                    <img
+                        src="images/chocolate-sprinkles-pancakes.png"
+                        alt="Pancakes decorated with Cavaa Chocolate Sprinkles"
+                    >
 
-            <div class="way-card-copy">
+                    <div class="way-card-copy">
 
-             <h3>Ice Cream &amp; Desserts</h3>
+                        <h3>Pancakes &amp; Waffles</h3>
 
-<p>
-    Finish sundaes, ice cream and frozen desserts with rich chocolate crunch.
-</p>
+                        <p>
+                            Turn weekend breakfasts into café-style indulgence with a touch of chocolate.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="way-card">
+
+                    <img
+                        src="images/chocolate-sprinkles-icecream.png"
+                        alt="Ice cream finished with Cavaa Chocolate Sprinkles"
+                    >
+
+                    <div class="way-card-copy">
+
+                        <h3>Ice Cream &amp; Desserts</h3>
+
+                        <p>
+                            Finish sundaes, ice cream and frozen desserts with rich chocolate crunch.
+                        </p>
+
+                    </div>
+
+                </article>
+
             </div>
 
-        </article>
+        </section>
 
-    </div>
-
-</section>
 
         <!-- PRODUCT DETAILS -->
 
@@ -355,7 +367,7 @@
 
                     <img
                         src="images/chocolate-sprinkles.png"
-                        alt="Cavaa Chocolate Sprinkles 200 gram jar"
+                        alt="Cavaa Chocolate Sprinkles 175 gram jar"
                     >
 
                 </div>
@@ -368,9 +380,9 @@
                         <h3>Ingredients</h3>
 
                         <p>
-    Premium sugar sprinkles with cocoa and quality ingredients crafted for
-     decorating.
-</p>
+                            Premium sugar sprinkles with cocoa and quality ingredients crafted for
+                            decorating.
+                        </p>
 
                     </div>
 
@@ -379,10 +391,10 @@
 
                         <h3>Perfect For</h3>
 
-                       <p>
-    Cakes, cupcakes, brownies, cookies, pancakes,
-    waffles, ice creams, milkshakes and desserts.
-</p>
+                        <p>
+                            Cakes, cupcakes, brownies, cookies, pancakes,
+                            waffles, ice creams, milkshakes and desserts.
+                        </p>
 
                     </div>
 
@@ -403,7 +415,7 @@
 
                         <h3>Net Weight</h3>
 
-                        <p>200 g</p>
+                        <p>175 g</p>
 
                     </div>
 
@@ -422,9 +434,10 @@
                         <h3>Crafted With Care</h3>
 
                         <p>
-    Thoughtfully crafted to add rich chocolate texture,
-    flavour and a beautiful finishing touch to every creation.
+                            Thoughtfully crafted to add rich chocolate texture,
+                            flavour and a beautiful finishing touch to every creation.
                         </p>
+
                     </div>
 
                 </div>
@@ -439,7 +452,7 @@
                 </h3>
 
                 <p>
-    Rich. Versatile. Beautifully crafted.
+                    Rich. Versatile. Beautifully crafted.
                 </p>
 
                 <a
@@ -452,6 +465,7 @@
             </div>
 
         </section>
+
     </main>
 
 
@@ -460,8 +474,9 @@
     <footer class="site-footer">
 
         <h3 class="footer-brand-name">
-    Cavaa Naturals
-</h3>
+            Cavaa Naturals
+        </h3>
+
         <p>
             Honest Ingredients. Elevated Flavours.
         </p>
